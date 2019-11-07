@@ -2,6 +2,7 @@ package org.deanlee.course;
 
 import org.junit.Test;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -12,10 +13,14 @@ public class AppTest {
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void shouldAnswerWithTrue() throws IOException {
 
         InputStream inputStream = ClassLoader.getSystemResourceAsStream("test.txt");
-        System.out.println(inputStream.toString());
+        int temp = 0;
+        while ((temp = inputStream.read()) != -1) {
+            System.out.print( (char) temp);
+        }
+
         System.out.println("tttt");
     }
 }
