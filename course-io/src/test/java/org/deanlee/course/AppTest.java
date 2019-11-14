@@ -21,6 +21,5 @@ public class AppTest {
             System.out.print( (char) temp);
         }
 
-        System.out.println("tttt");
     }
 }
