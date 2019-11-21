@@ -1,4 +1,4 @@
-package org.deanlee.course.blockingio;
+package org.deanlee.course.networkio.blockingio;
 
 /**
  * @author LiMeng
