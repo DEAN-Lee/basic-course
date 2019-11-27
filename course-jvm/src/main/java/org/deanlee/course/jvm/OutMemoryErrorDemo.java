@@ -17,6 +17,10 @@ import java.util.List;
 public class OutMemoryErrorDemo {
     static String test = "test";
 
+    /**
+     * java head outOfMemory
+     * -Xms16m -Xmx16
+     */
     public void outMemoryTest() {
         List<String> list = new ArrayList<>();
         System.out.println(test);
@@ -27,6 +31,10 @@ public class OutMemoryErrorDemo {
         }
     }
 
+    /**
+     * MetaSpace outOfMemory
+     * -XX:MetaspaceSize=10m  -XX:MaxMetaspaceSize=10m
+     */
     public void metaOutTest(){
         System.out.println("#########################");
         URL url = null;

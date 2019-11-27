@@ -1,7 +1,5 @@
-package org.deanlee.course;
+package org.deanlee.course.jvm;
 
-import org.deanlee.course.jvm.OutMemoryErrorDemo;
-import org.deanlee.course.networkio.blockingio.InputOrOutStreamDemo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

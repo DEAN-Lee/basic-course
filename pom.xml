@@ -10,6 +10,7 @@
     <version>1.0-RELEASE</version>
     <modules>
         <module>course-io</module>
+        <module>course-jvm</module>
     </modules>
 
     <parent>
