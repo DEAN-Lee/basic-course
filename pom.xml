@@ -12,6 +12,7 @@
         <module>course-io</module>
         <module>course-jvm</module>
         <module>course-algorithm</module>
+        <module>course-proxy</module>
     </modules>
 
     <parent>
