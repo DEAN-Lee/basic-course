@@ -14,3 +14,6 @@ JDK 1.80 +
 1. IO模型     
 2. JAVA IO
 3. snowflake id
+4. JVM模型
+5. 代理模式
+6. TCP协议
