@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 数据传输
  * c-----PUH ACK: seq=j+1 ack=K+1 len=x--------->s
  * S-----PUH ACK: seq=k+1 ack=j+1+x len=y------->c
+ *
  * C-----ACK: seq=j+1+x+1 ack=k+1+y------------->S
  *
  * 四次挥手
