@@ -1,4 +1,4 @@
-package com.deanlee.course.proxy;
+package com.deanlee.course.pattern.proxy;
 
 /**
  * 代理类（实现上述接口）

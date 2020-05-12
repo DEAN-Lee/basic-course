@@ -1,4 +1,4 @@
-package com.deanlee.course.proxy;
+package com.deanlee.course.pattern.proxy;
 
 /**
  * 客户端调用

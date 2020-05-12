@@ -14,15 +14,14 @@
     <artifactId>basic-course</artifactId>
     <packaging>pom</packaging>
     <version>1.0-RELEASE</version>
+
     <modules>
         <module>course-io</module>
         <module>course-jvm</module>
         <module>course-algorithm</module>
-        <module>course-proxy</module>
+        <module>course-pattern</module>
         <module>course-tcp</module>
     </modules>
-
-
 
     <dependencies>
         <dependency>
