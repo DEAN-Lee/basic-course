@@ -13,29 +13,49 @@ package com.deanlee.course.pattern.singleton;
 
  关键代码：构造函数是私有的。
  懒汉模式：
- 初始化数据
+ 初始化数据：否
  线程非安全
+ 不建议使用
  */
 
 public class LazySingletonDemo {
-    private static LazySingletonDemo lazySingletonDemo;
+    private static LazySingletonDemo instance;
 
     private LazySingletonDemo() {
-        System.out.println("SingletonDemo");
+        System.out.println("SingletonDemo init");
     }
 
-    public static LazySingletonDemo getLazySingletonDemo() {
-        if (lazySingletonDemo == null) {
-            lazySingletonDemo = new LazySingletonDemo();
+    public static LazySingletonDemo getInstance() {
+        if (instance == null) {
+            instance = new LazySingletonDemo();
         }
-        return lazySingletonDemo;
+        return instance;
     }
 
 
     public static void main(String[] args) {
-        LazySingletonDemo lazySingletonDemo = LazySingletonDemo.getLazySingletonDemo();
-        LazySingletonDemo lazySingletonDemo1 = LazySingletonDemo.getLazySingletonDemo();
+        singletonThread();
+        multiThread();
+
+    }
+
+    public static void singletonThread() {
+        LazySingletonDemo lazySingletonDemo = LazySingletonDemo.getInstance();
+        LazySingletonDemo lazySingletonDemo1 = LazySingletonDemo.getInstance();
+        System.out.println("lazySingletonDemo1:" + lazySingletonDemo1.hashCode());
+        System.out.println("lazySingletonDemo:" + lazySingletonDemo.hashCode());
         System.out.println(lazySingletonDemo == lazySingletonDemo1);
+    }
+
+    public static void multiThread() {
+        Runnable task = () -> {
+            LazySingletonDemo lazySingletonDemo = LazySingletonDemo.getInstance();
+            System.out.println("lazySingletonDemo:" + lazySingletonDemo.hashCode());
+        };
+
+        for (int i = 0; i < 4; i++) {
+            new Thread(task,""+i).start();
+        }
     }
 
 
