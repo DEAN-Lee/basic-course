@@ -47,7 +47,7 @@ public class EagerSingletonDemo {
     public static void multiThread() {
         Runnable task = () -> {
             EagerSingletonDemo instance = EagerSingletonDemo.getInstance();
-            System.out.println("lazySingletonDemo:" + instance.hashCode());
+            System.out.println("EagerSingletonDemo:" + instance.hashCode());
         };
 
         for (int i = 0; i < 4; i++) {
