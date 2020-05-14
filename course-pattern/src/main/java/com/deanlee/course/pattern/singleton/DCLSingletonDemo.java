@@ -6,8 +6,7 @@ package com.deanlee.course.pattern.singleton;
  * 是否多线程安全：是
  * 实现难度：较复杂
  * 描述：这种方式采用双锁机制，安全且在多线程情况下能保持高性能。
- *  synchronized
- *  volatile
+ * 推荐：特殊需求时，使用此方式
  */
 public class DCLSingletonDemo {
     // volatile 修饰
@@ -16,7 +15,6 @@ public class DCLSingletonDemo {
     private DCLSingletonDemo(){
 
     }
-
 
     public static DCLSingletonDemo getInstance(){
         if (instance == null) {

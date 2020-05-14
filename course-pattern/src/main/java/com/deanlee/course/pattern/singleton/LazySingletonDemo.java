@@ -15,7 +15,7 @@ package com.deanlee.course.pattern.singleton;
  懒汉模式：
  初始化数据：否
  线程非安全
- 不建议使用
+ 不建议使用 线程非安全
  */
 
 public class LazySingletonDemo {
