@@ -68,3 +68,6 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# compile class dir
+target/
+
