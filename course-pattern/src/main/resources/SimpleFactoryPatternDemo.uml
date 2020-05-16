@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.factory.simple.FactoryPatternDemo</OriginalElement>
+  <nodes>
+    <node x="0.0" y="104.0">com.deanlee.course.pattern.factory.simple.ShorthairCat</node>
+    <node x="122.70833333333331" y="312.0">com.deanlee.course.pattern.factory.simple.FactoryPatternDemo</node>
+    <node x="152.0" y="104.0">com.deanlee.course.pattern.factory.simple.MuppetCat</node>
+    <node x="155.375" y="0.0">com.deanlee.course.pattern.factory.simple.SimpleCat</node>
+    <node x="110.70833333333333" y="208.0">com.deanlee.course.pattern.factory.simple.SimpleCatFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.factory.simple.ShorthairCat" target="com.deanlee.course.pattern.factory.simple.SimpleCat">
+      <point x="0.0" y="-27.0" />
+      <point x="66.0" y="79.0" />
+      <point x="175.875" y="79.0" />
+      <point x="-41.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.simple.SimpleCatFactory" target="com.deanlee.course.pattern.factory.simple.SimpleCat">
+      <point x="63.33333333333334" y="-27.0" />
+      <point x="269.0416666666667" y="183.0" />
+      <point x="285.5" y="183.0" />
+      <point x="285.5" y="79.0" />
+      <point x="257.875" y="79.0" />
+      <point x="40.99999999999999" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.simple.SimpleCatFactory" target="com.deanlee.course.pattern.factory.simple.ShorthairCat">
+      <point x="-63.333333333333314" y="-27.0" />
+      <point x="142.375" y="183.0" />
+      <point x="66.0" y="183.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.simple.MuppetCat" target="com.deanlee.course.pattern.factory.simple.SimpleCat">
+      <point x="0.0" y="-27.0" />
+      <point x="213.5" y="79.0" />
+      <point x="216.875" y="79.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.simple.FactoryPatternDemo" target="com.deanlee.course.pattern.factory.simple.SimpleCatFactory">
+      <point x="-43.5" y="-27.0" />
+      <point x="166.20833333333331" y="287.0" />
+      <point x="158.20833333333331" y="287.0" />
+      <point x="-47.5" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.simple.SimpleCatFactory" target="com.deanlee.course.pattern.factory.simple.MuppetCat">
+      <point x="2.8421709430404007E-14" y="-27.0" />
+      <point x="205.70833333333337" y="183.0" />
+      <point x="213.5" y="183.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="150.5" y="183.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.factory.simple.FactoryPatternDemo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

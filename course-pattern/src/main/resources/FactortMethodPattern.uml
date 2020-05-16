@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.factory.method.Cat</OriginalElement>
+  <nodes>
+    <node x="358.7416666666667" y="208.0">com.deanlee.course.pattern.factory.method.MuppetCatFactory</node>
+    <node x="62.52000000000001" y="208.0">com.deanlee.course.pattern.factory.method.ShorthairCatFactory</node>
+    <node x="178.20333333333332" y="312.0">com.deanlee.course.pattern.factory.method.MethodFactoryDemo</node>
+    <node x="348.10333333333335" y="104.0">com.deanlee.course.pattern.factory.method.MuppetCat</node>
+    <node x="186.10333333333332" y="104.0">com.deanlee.course.pattern.factory.method.CatFactory</node>
+    <node x="0.0" y="104.0">com.deanlee.course.pattern.factory.method.ShorthairCat</node>
+    <node x="181.60333333333332" y="0.0">com.deanlee.course.pattern.factory.method.Cat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.factory.method.MuppetCatFactory" target="com.deanlee.course.pattern.factory.method.CatFactory">
+      <point x="-53.33333333333334" y="-27.0" />
+      <point x="385.4083333333333" y="183.0" />
+      <point x="304.4366666666666" y="183.0" />
+      <point x="47.333333333333314" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.method.MuppetCat" target="com.deanlee.course.pattern.factory.method.Cat">
+      <point x="0.0" y="-27.0" />
+      <point x="423.60333333333335" y="84.0" />
+      <point x="287.3033333333333" y="84.0" />
+      <point x="30.19999999999999" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.method.ShorthairCatFactory" target="com.deanlee.course.pattern.factory.method.CatFactory">
+      <point x="60.333333333333314" y="-27.0" />
+      <point x="213.35333333333332" y="183.0" />
+      <point x="209.76999999999998" y="183.0" />
+      <point x="-47.33333333333334" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.method.ShorthairCat" target="com.deanlee.course.pattern.factory.method.Cat">
+      <point x="0.0" y="-27.0" />
+      <point x="75.5" y="74.0" />
+      <point x="196.70333333333332" y="74.0" />
+      <point x="-60.400000000000006" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="259.5" y="183.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.factory.method.Cat</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
