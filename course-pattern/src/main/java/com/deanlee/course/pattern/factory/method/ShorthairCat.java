@@ -1,8 +1,5 @@
-package com.deanlee.course.pattern.factory.simple;
+package com.deanlee.course.pattern.factory.method;
 
-/**
- * 具体实现
- */
 public class ShorthairCat implements Cat {
     @Override
     public void getCatType() {
