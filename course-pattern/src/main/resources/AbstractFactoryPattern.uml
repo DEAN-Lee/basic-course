@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.factory.absfactory.AbsFactoryDemo</OriginalElement>
+  <nodes>
+    <node x="71.68571428571414" y="291.0">com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory</node>
+    <node x="533.5" y="175.5">com.deanlee.course.pattern.factory.absfactory.MuppetCat</node>
+    <node x="359.0" y="302.5">com.deanlee.course.pattern.factory.absfactory.AbsFactoryDemo</node>
+    <node x="10.5" y="175.5">com.deanlee.course.pattern.factory.absfactory.ShorthairCat</node>
+    <node x="274.0" y="0.0">com.deanlee.course.pattern.factory.absfactory.Cat</node>
+    <node x="359.5" y="164.0">com.deanlee.course.pattern.factory.absfactory.PetFactory</node>
+    <node x="445.0" y="0.0">com.deanlee.course.pattern.factory.absfactory.Dog</node>
+    <node x="705.5" y="175.5">com.deanlee.course.pattern.factory.absfactory.SamoyedDog</node>
+    <node x="182.5" y="175.5">com.deanlee.course.pattern.factory.absfactory.HuskyDog</node>
+    <node x="605.1857142857141" y="291.0">com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCat" target="com.deanlee.course.pattern.factory.absfactory.Cat">
+      <point x="0.0" y="-27.0" />
+      <point x="86.0" y="114.0" />
+      <point x="319.29999999999995" y="114.0" />
+      <point x="-30.19999999999999" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.ShorthairCat">
+      <point x="-40.400000000000034" y="-38.5" />
+      <point x="132.2857142857141" y="261.0" />
+      <point x="86.0" y="261.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.AbsFactoryDemo" target="com.deanlee.course.pattern.factory.absfactory.PetFactory">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCat" target="com.deanlee.course.pattern.factory.absfactory.Cat">
+      <point x="0.0" y="-27.0" />
+      <point x="609.0" y="104.0" />
+      <point x="379.69999999999993" y="104.0" />
+      <point x="30.19999999999999" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.HuskyDog" target="com.deanlee.course.pattern.factory.absfactory.Dog">
+      <point x="0.0" y="-27.0" />
+      <point x="261.0" y="134.0" />
+      <point x="492.1" y="134.0" />
+      <point x="-31.399999999999977" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.PetFactory" target="com.deanlee.course.pattern.factory.absfactory.Dog">
+      <point x="38.5" y="-38.5" />
+      <point x="475.0" y="144.0" />
+      <point x="523.5" y="144.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.Cat">
+      <point x="-80.80000000000001" y="-38.5" />
+      <point x="91.88571428571413" y="271.0" />
+      <point x="0.0" y="271.0" />
+      <point x="0.0" y="104.0" />
+      <point x="289.1" y="104.0" />
+      <point x="-60.39999999999998" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.SamoyedDog" target="com.deanlee.course.pattern.factory.absfactory.Dog">
+      <point x="0.0" y="-27.0" />
+      <point x="784.0" y="84.0" />
+      <point x="554.9" y="84.0" />
+      <point x="31.399999999999977" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.PetFactory">
+      <point x="80.80000000000001" y="-38.5" />
+      <point x="253.48571428571415" y="271.0" />
+      <point x="385.16666666666663" y="271.0" />
+      <point x="-51.333333333333314" y="38.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.Dog">
+      <point x="72.39999999999998" y="-38.5" />
+      <point x="768.0857142857142" y="271.0" />
+      <point x="873.0" y="271.0" />
+      <point x="873.0" y="74.0" />
+      <point x="586.3" y="74.0" />
+      <point x="62.799999999999955" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.PetFactory" target="com.deanlee.course.pattern.factory.absfactory.Cat">
+      <point x="-38.5" y="-38.5" />
+      <point x="398.0" y="114.0" />
+      <point x="349.5" y="114.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.Cat">
+      <point x="0.0" y="-38.5" />
+      <point x="695.0" y="94.0" />
+      <point x="409.9" y="94.0" />
+      <point x="60.39999999999998" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.PetFactory">
+      <point x="-72.39999999999998" y="-38.5" />
+      <point x="623.2857142857142" y="271.0" />
+      <point x="487.83333333333337" y="271.0" />
+      <point x="51.33333333333337" y="38.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.SamoyedDog">
+      <point x="36.200000000000045" y="-38.5" />
+      <point x="731.8857142857141" y="261.0" />
+      <point x="784.0" y="261.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.MuppetCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.MuppetCat">
+      <point x="-36.200000000000045" y="-38.5" />
+      <point x="659.485714285714" y="261.0" />
+      <point x="609.0" y="261.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.HuskyDog">
+      <point x="40.39999999999998" y="-38.5" />
+      <point x="213.08571428571412" y="261.0" />
+      <point x="261.0" y="261.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.factory.absfactory.ShorthairCatDogFactory" target="com.deanlee.course.pattern.factory.absfactory.Dog">
+      <point x="0.0" y="-38.5" />
+      <point x="172.0" y="124.0" />
+      <point x="460.69999999999993" y="124.0" />
+      <point x="-62.80000000000001" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="436.5" y="184.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
