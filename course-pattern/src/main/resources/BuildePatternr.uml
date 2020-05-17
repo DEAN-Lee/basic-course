@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.builder.Builder</OriginalElement>
+  <nodes>
+    <node x="25.239393939394006" y="219.0">com.deanlee.course.pattern.builder.Builder</node>
+    <node x="115.30757575757582" y="565.0">com.deanlee.course.pattern.builder.BuliderPatternDemo</node>
+    <node x="10.5" y="426.5">com.deanlee.course.pattern.builder.Director</node>
+    <node x="320.48939393939395" y="0.0">com.deanlee.course.pattern.builder.Computer</node>
+    <node x="288.75" y="392.0">com.deanlee.course.pattern.builder.MacBuilder</node>
+    <node x="294.86439393939395" y="253.5">com.deanlee.course.pattern.builder.MacComputer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.builder.Director" target="com.deanlee.course.pattern.builder.Builder">
+      <point x="-61.75" y="-27.0" />
+      <point x="72.25" y="367.0" />
+      <point x="102.114393939394" y="367.0" />
+      <point x="-25.625" y="61.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.MacBuilder" target="com.deanlee.course.pattern.builder.Computer">
+      <point x="25.625" y="-61.5" />
+      <point x="416.875" y="367.0" />
+      <point x="430.36439393939395" y="367.0" />
+      <point x="430.36439393939395" y="199.0" />
+      <point x="424.3227272727273" y="199.0" />
+      <point x="14.833333333333314" y="84.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.MacBuilder" target="com.deanlee.course.pattern.builder.Builder">
+      <point x="-76.875" y="-61.5" />
+      <point x="314.375" y="367.0" />
+      <point x="204.614393939394" y="367.0" />
+      <point x="76.875" y="61.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.BuliderPatternDemo" target="com.deanlee.course.pattern.builder.Builder">
+      <point x="-69.6" y="-27.0" />
+      <point x="132.70757575757582" y="545.0" />
+      <point x="0.0" y="545.0" />
+      <point x="0.0" y="367.0" />
+      <point x="50.864393939394006" y="367.0" />
+      <point x="-76.875" y="61.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.MacComputer" target="com.deanlee.course.pattern.builder.Computer">
+      <point x="31.25" y="-27.0" />
+      <point x="388.61439393939395" y="199.0" />
+      <point x="394.6560606060607" y="199.0" />
+      <point x="-14.833333333333314" y="84.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.MacBuilder" target="com.deanlee.course.pattern.builder.MacComputer">
+      <point x="-25.625" y="-61.5" />
+      <point x="365.625" y="367.0" />
+      <point x="357.36439393939395" y="367.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.BuliderPatternDemo" target="com.deanlee.course.pattern.builder.Director">
+      <point x="-34.80000000000001" y="-27.0" />
+      <point x="167.5075757575758" y="535.0" />
+      <point x="72.25" y="535.0" />
+      <point x="-61.75" y="27.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.BuliderPatternDemo" target="com.deanlee.course.pattern.builder.Computer">
+      <point x="69.59999999999997" y="-27.0" />
+      <point x="271.9075757575758" y="545.0" />
+      <point x="504.25" y="545.0" />
+      <point x="504.25" y="199.0" />
+      <point x="483.6560606060607" y="199.0" />
+      <point x="74.16666666666669" y="84.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.Builder" target="com.deanlee.course.pattern.builder.Computer">
+      <point x="0.0" y="-61.5" />
+      <point x="127.739393939394" y="189.0" />
+      <point x="335.3227272727273" y="189.0" />
+      <point x="-74.16666666666669" y="84.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.builder.BuliderPatternDemo" target="com.deanlee.course.pattern.builder.MacBuilder">
+      <point x="34.80000000000001" y="-27.0" />
+      <point x="237.10757575757583" y="535.0" />
+      <point x="391.25" y="535.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="153.0" y="138.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.builder.Builder</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
