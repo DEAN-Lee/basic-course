@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.proxy.Client</OriginalElement>
+  <nodes>
+    <node x="13.1875" y="79.0">com.deanlee.course.pattern.proxy.RealSubject</node>
+    <node x="27.1875" y="0.0">com.deanlee.course.pattern.proxy.Subject</node>
+    <node x="0.0" y="158.0">com.deanlee.course.pattern.proxy.Proxy</node>
+    <node x="54.895833333333314" y="237.0">com.deanlee.course.pattern.proxy.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.proxy.Proxy" target="com.deanlee.course.pattern.proxy.Subject">
+      <point x="-27.66666666666667" y="-14.5" />
+      <point x="13.833333333333329" y="133.0" />
+      <point x="2.6875" y="133.0" />
+      <point x="2.6875" y="54.0" />
+      <point x="43.354166666666664" y="54.0" />
+      <point x="-32.333333333333336" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.proxy.RealSubject" target="com.deanlee.course.pattern.proxy.Subject">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="72.5" y="133.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.proxy.Client</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
