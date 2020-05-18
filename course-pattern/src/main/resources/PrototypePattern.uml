@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.prototype.Circle</OriginalElement>
+  <nodes>
+    <node x="229.93240740740742" y="0.0">java.lang.Cloneable</node>
+    <node x="110.0" y="188.0">com.deanlee.course.pattern.prototype.Rectangle</node>
+    <node x="243.93240740740742" y="79.0">com.deanlee.course.pattern.prototype.Shape</node>
+    <node x="0.0" y="188.0">com.deanlee.course.pattern.prototype.Circle</node>
+    <node x="212.73472222222225" y="366.0">com.deanlee.course.pattern.prototype.PrototypePatternDemo</node>
+    <node x="241.0" y="188.0">com.deanlee.course.pattern.prototype.Square</node>
+    <node x="205.83472222222224" y="287.0">com.deanlee.course.pattern.prototype.ShapeCache</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.prototype.Rectangle" target="com.deanlee.course.pattern.prototype.Shape">
+      <point x="27.75" y="-14.5" />
+      <point x="193.25" y="158.0" />
+      <point x="272.98240740740744" y="158.0" />
+      <point x="-12.449999999999989" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.ShapeCache" target="com.deanlee.course.pattern.prototype.Circle">
+      <point x="-39.33333333333334" y="-14.5" />
+      <point x="225.5013888888889" y="257.0" />
+      <point x="67.5" y="257.0" />
+      <point x="22.5" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.PrototypePatternDemo" target="com.deanlee.course.pattern.prototype.ShapeCache">
+      <point x="-47.0" y="-14.5" />
+      <point x="259.7347222222222" y="341.0" />
+      <point x="264.83472222222224" y="341.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.ShapeCache" target="com.deanlee.course.pattern.prototype.Square">
+      <point x="0.0" y="-14.5" />
+      <point x="264.83472222222224" y="267.0" />
+      <point x="263.5" y="267.0" />
+      <point x="-22.5" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.PrototypePatternDemo" target="com.deanlee.course.pattern.prototype.Shape">
+      <point x="47.0" y="-14.5" />
+      <point x="353.7347222222222" y="341.0" />
+      <point x="375.6101851851852" y="341.0" />
+      <point x="375.6101851851852" y="128.0" />
+      <point x="322.7824074074074" y="128.0" />
+      <point x="37.349999999999966" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.Circle" target="com.deanlee.course.pattern.prototype.Shape">
+      <point x="-22.5" y="-14.5" />
+      <point x="22.5" y="128.0" />
+      <point x="248.08240740740743" y="128.0" />
+      <point x="-37.349999999999994" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.ShapeCache" target="com.deanlee.course.pattern.prototype.Rectangle">
+      <point x="-13.111111111111114" y="-14.5" />
+      <point x="251.72361111111113" y="237.0" />
+      <point x="193.25" y="237.0" />
+      <point x="27.75" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.ShapeCache" target="com.deanlee.course.pattern.prototype.Shape">
+      <point x="39.333333333333314" y="-14.5" />
+      <point x="304.16805555555555" y="257.0" />
+      <point x="352.5" y="257.0" />
+      <point x="352.5" y="148.0" />
+      <point x="306.1824074074074" y="148.0" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.Shape" target="java.lang.Cloneable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.prototype.Square" target="com.deanlee.course.pattern.prototype.Shape">
+      <point x="-22.5" y="-14.5" />
+      <point x="263.5" y="168.0" />
+      <point x="281.28240740740745" y="168.0" />
+      <point x="-4.149999999999977" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="200.5" y="349.5" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.prototype.ShapeCache</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
