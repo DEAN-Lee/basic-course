@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.observer.ConcreteObserver</OriginalElement>
+  <nodes>
+    <node x="247.08333333333337" y="138.0">com.deanlee.course.pattern.observer.ConcreteObserver</node>
+    <node x="124.43750000000006" y="0.0">com.deanlee.course.pattern.observer.Observer</node>
+    <node x="443.08333333333337" y="138.0">com.deanlee.course.pattern.observer.OtherObserver</node>
+    <node x="233.00000000000003" y="371.0">com.deanlee.course.pattern.observer.ObserverPatternDemo</node>
+    <node x="44.08333333333337" y="115.0">com.deanlee.course.pattern.observer.Subject</node>
+    <node x="0.0" y="266.0">com.deanlee.course.pattern.observer.ConcreteSubject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.observer.ObserverPatternDemo" target="com.deanlee.course.pattern.observer.Subject">
+      <point x="-40.0" y="-27.5" />
+      <point x="293.0" y="341.0" />
+      <point x="198.60416666666669" y="341.0" />
+      <point x="198.60416666666669" y="241.0" />
+      <point x="196.58333333333337" y="241.0" />
+      <point x="61.0" y="50.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ConcreteSubject" target="com.deanlee.course.pattern.observer.Subject">
+      <point x="57.0" y="-27.5" />
+      <point x="142.5" y="241.0" />
+      <point x="135.58333333333337" y="241.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ConcreteSubject" target="com.deanlee.course.pattern.observer.Observer">
+      <point x="-57.0" y="-27.5" />
+      <point x="28.5" y="241.0" />
+      <point x="33.58333333333337" y="241.0" />
+      <point x="33.58333333333337" y="75.0" />
+      <point x="134.93750000000006" y="75.0" />
+      <point x="-63.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ObserverPatternDemo" target="com.deanlee.course.pattern.observer.ConcreteObserver">
+      <point x="0.0" y="-27.5" />
+      <point x="333.0" y="351.0" />
+      <point x="335.08333333333337" y="351.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ConcreteObserver" target="com.deanlee.course.pattern.observer.Observer">
+      <point x="0.0" y="-27.5" />
+      <point x="335.08333333333337" y="95.0" />
+      <point x="218.93750000000006" y="95.0" />
+      <point x="21.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.OtherObserver" target="com.deanlee.course.pattern.observer.Observer">
+      <point x="0.0" y="-27.5" />
+      <point x="519.0833333333334" y="85.0" />
+      <point x="239.93750000000006" y="85.0" />
+      <point x="42.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ObserverPatternDemo" target="com.deanlee.course.pattern.observer.ConcreteSubject">
+      <point x="-80.0" y="-27.5" />
+      <point x="253.00000000000003" y="351.0" />
+      <point x="85.5" y="351.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ObserverPatternDemo" target="com.deanlee.course.pattern.observer.OtherObserver">
+      <point x="40.0" y="-27.5" />
+      <point x="373.0" y="341.0" />
+      <point x="519.0833333333334" y="341.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.ObserverPatternDemo" target="com.deanlee.course.pattern.observer.Observer">
+      <point x="80.0" y="-27.5" />
+      <point x="413.0" y="351.0" />
+      <point x="605.5833333333334" y="351.0" />
+      <point x="605.5833333333334" y="75.0" />
+      <point x="260.93750000000006" y="75.0" />
+      <point x="63.0" y="27.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.Subject" target="com.deanlee.course.pattern.observer.Observer">
+      <point x="0.0" y="-50.5" />
+      <point x="135.58333333333337" y="95.0" />
+      <point x="176.93750000000006" y="95.0" />
+      <point x="-21.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="280.0" y="193.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.observer.ObserverPatternDemo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
