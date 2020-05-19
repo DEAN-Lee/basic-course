@@ -16,5 +16,11 @@ public class ObserverPatternDemo {
         subject.add(observer1);
         //目标变动 通知观察者
         subject.notifyObserver();
+
+        GoldFutures goldFutures = new GoldFutures();
+        goldFutures.addObserver(new Bear());
+        goldFutures.addObserver(new Bull());
+        goldFutures.setPrice(1);
+
     }
 }
