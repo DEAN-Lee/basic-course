@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.strategy.Context</OriginalElement>
+  <nodes>
+    <node x="92.00000000000003" y="160.0">com.deanlee.course.pattern.strategy.StrategyPatternDemo</node>
+    <node x="280.0" y="80.0">com.deanlee.course.pattern.strategy.OtherStrategy</node>
+    <node x="124.00000000000001" y="80.0">com.deanlee.course.pattern.strategy.TheStrategy</node>
+    <node x="0.0" y="80.0">com.deanlee.course.pattern.strategy.Context</node>
+    <node x="136.0" y="0.0">com.deanlee.course.pattern.strategy.Strategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.strategy.OtherStrategy" target="com.deanlee.course.pattern.strategy.Strategy">
+      <point x="2.8421709430404007E-14" y="-15.0" />
+      <point x="356.0" y="60.0" />
+      <point x="214.39999999999998" y="60.0" />
+      <point x="22.399999999999977" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.strategy.TheStrategy" target="com.deanlee.course.pattern.strategy.Strategy">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="570.5" y="130.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.strategy.Context</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
