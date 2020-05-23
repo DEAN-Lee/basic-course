@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.responsibility.Handler</OriginalElement>
+  <nodes>
+    <node x="155.75" y="0.0">com.deanlee.course.pattern.responsibility.Handler</node>
+    <node x="165.50000000000003" y="158.0">com.deanlee.course.pattern.responsibility.Responsibility</node>
+    <node x="166.0" y="79.0">com.deanlee.course.pattern.responsibility.NextHandlerImpl</node>
+    <node x="0.0" y="79.0">com.deanlee.course.pattern.responsibility.TheHandlerImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.responsibility.NextHandlerImpl" target="com.deanlee.course.pattern.responsibility.Handler">
+      <point x="-38.25" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.responsibility.Responsibility" target="com.deanlee.course.pattern.responsibility.Handler">
+      <point x="48.666666666666664" y="-14.5" />
+      <point x="287.1666666666667" y="133.0" />
+      <point x="329.5" y="133.0" />
+      <point x="329.5" y="49.0" />
+      <point x="243.05" y="49.0" />
+      <point x="38.80000000000001" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.responsibility.TheHandlerImpl" target="com.deanlee.course.pattern.responsibility.Handler">
+      <point x="-36.5" y="-14.5" />
+      <point x="36.5" y="49.0" />
+      <point x="165.45" y="49.0" />
+      <point x="-38.80000000000001" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.responsibility.Responsibility" target="com.deanlee.course.pattern.responsibility.TheHandlerImpl">
+      <point x="-48.666666666666686" y="-14.5" />
+      <point x="189.83333333333334" y="133.0" />
+      <point x="73.0" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.responsibility.Responsibility" target="com.deanlee.course.pattern.responsibility.NextHandlerImpl">
+      <point x="-2.8421709430404007E-14" y="-14.5" />
+      <point x="238.5" y="133.0" />
+      <point x="242.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="159.5" y="91.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
