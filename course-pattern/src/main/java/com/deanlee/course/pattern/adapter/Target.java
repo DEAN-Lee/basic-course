@@ -7,4 +7,5 @@ package com.deanlee.course.pattern.adapter;
  * @date 2020/5/25 23:46
  */
 public interface Target {
+    void request();
 }

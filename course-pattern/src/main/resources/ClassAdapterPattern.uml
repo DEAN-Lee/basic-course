@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.adapter.ClassAdapter</OriginalElement>
+  <nodes>
+    <node x="124.0" y="0.0">com.deanlee.course.pattern.adapter.Target</node>
+    <node x="16.0" y="80.0">com.deanlee.course.pattern.adapter.ClassAdapter</node>
+    <node x="46.0" y="160.0">com.deanlee.course.pattern.adapter.AdapterPatternDemo</node>
+    <node x="0.0" y="0.0">com.deanlee.course.pattern.adapter.Adaptee</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.adapter.AdapterPatternDemo" target="com.deanlee.course.pattern.adapter.Target">
+      <point x="48.0" y="-15.0" />
+      <point x="190.0" y="135.0" />
+      <point x="196.0" y="135.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.adapter.ClassAdapter" target="com.deanlee.course.pattern.adapter.Adaptee">
+      <point x="-36.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.adapter.ClassAdapter" target="com.deanlee.course.pattern.adapter.Target">
+      <point x="36.0" y="-15.0" />
+      <point x="124.0" y="55.0" />
+      <point x="148.0" y="55.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.adapter.AdapterPatternDemo" target="com.deanlee.course.pattern.adapter.ClassAdapter">
+      <point x="-48.0" y="-15.0" />
+      <point x="94.0" y="135.0" />
+      <point x="88.0" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="110.0" y="92.5" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.adapter.AdapterPatternDemo</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
