@@ -7,4 +7,8 @@ package com.deanlee.course.pattern.template;
  * @date 2020/5/27 23:50
  */
 public class TemplateMethodPatternDemo {
+    public static void main(String[] args) {
+        AbstractClass tm=new ConcreteClass();
+        tm.TemplateMethod();
+    }
 }
