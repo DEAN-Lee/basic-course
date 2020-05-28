@@ -3,6 +3,9 @@ package com.deanlee.course.pattern.observer;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * 具体观察者。
+ */
 public class Bear implements Observer {
     @Override
     public void update(Observable o, Object arg) {

@@ -3,7 +3,7 @@ package com.deanlee.course.pattern.observer;
 import java.util.Observable;
 
 /**
- * 继承观察者目标类
+ * 被观察者-目标类
  */
 public class GoldFutures extends Observable {
     private float price;
