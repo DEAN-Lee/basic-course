@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.observer.DoorEvent</OriginalElement>
+  <nodes>
+    <node x="102.39102564102564" y="170.0">java.util.EventListener</node>
+    <node x="0.0" y="340.0">com.deanlee.course.pattern.observer.OtherRoomDoorListener</node>
+    <node x="324.0" y="170.0">com.deanlee.course.pattern.observer.DoorEvent</node>
+    <node x="235.99999999999997" y="340.0">com.deanlee.course.pattern.observer.RoomDoorListener</node>
+    <node x="343.47435897435895" y="420.0">com.deanlee.course.pattern.observer.EventObjectDemo</node>
+    <node x="432.0" y="340.0">com.deanlee.course.pattern.observer.DoorSource</node>
+    <node x="191.99999999999997" y="260.0">com.deanlee.course.pattern.observer.DoorListener</node>
+    <node x="289.3333333333333" y="0.0">java.io.Serializable</node>
+    <node x="293.3333333333333" y="80.0">java.util.EventObject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.observer.EventObjectDemo" target="com.deanlee.course.pattern.observer.OtherRoomDoorListener">
+      <point x="-63.0" y="-15.0" />
+      <point x="364.47435897435895" y="400.0" />
+      <point x="108.0" y="400.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.EventObject" target="java.util.EventObject">
+      <point x="-45.333333333333336" y="15.0" />
+      <point x="315.99999999999994" y="130.0" />
+      <point x="273.3333333333333" y="130.0" />
+      <point x="273.3333333333333" y="95.0" />
+      <point x="-68.0" y="-0.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.RoomDoorListener" target="com.deanlee.course.pattern.observer.DoorEvent">
+      <point x="44.0" y="-15.0" />
+      <point x="368.0" y="320.0" />
+      <point x="384.0" y="320.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.OtherRoomDoorListener" target="com.deanlee.course.pattern.observer.DoorEvent">
+      <point x="-54.0" y="-15.0" />
+      <point x="54.0" y="320.0" />
+      <point x="83.62820512820514" y="320.0" />
+      <point x="83.62820512820514" y="230.0" />
+      <point x="336.0" y="230.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.DoorEvent" target="java.util.EventObject">
+      <point x="30.0" y="-15.0" />
+      <point x="414.0" y="150.0" />
+      <point x="406.66666666666663" y="150.0" />
+      <point x="45.33333333333334" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.DoorSource" target="com.deanlee.course.pattern.observer.DoorEvent">
+      <point x="0.0" y="-15.0" />
+      <point x="496.0" y="320.0" />
+      <point x="511.8333333333333" y="320.0" />
+      <point x="511.8333333333333" y="240.0" />
+      <point x="408.0" y="240.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.DoorListener" target="com.deanlee.course.pattern.observer.DoorEvent">
+      <point x="36.0" y="-15.0" />
+      <point x="300.0" y="240.0" />
+      <point x="360.0" y="240.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.OtherRoomDoorListener" target="com.deanlee.course.pattern.observer.DoorListener">
+      <point x="54.00000000000003" y="-15.0" />
+      <point x="162.00000000000003" y="320.0" />
+      <point x="215.99999999999997" y="320.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.RoomDoorListener" target="com.deanlee.course.pattern.observer.DoorListener">
+      <point x="-44.0" y="-15.0" />
+      <point x="280.0" y="320.0" />
+      <point x="264.0" y="320.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.EventObjectDemo" target="com.deanlee.course.pattern.observer.RoomDoorListener">
+      <point x="-21.0" y="-15.0" />
+      <point x="406.47435897435895" y="390.0" />
+      <point x="324.0" y="390.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.DoorListener" target="java.util.EventListener">
+      <point x="-36.0" y="-15.0" />
+      <point x="227.99999999999997" y="220.0" />
+      <point x="178.39102564102564" y="220.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.DoorSource" target="com.deanlee.course.pattern.observer.DoorListener">
+      <point x="-42.66666666666666" y="-15.0" />
+      <point x="453.3333333333333" y="310.0" />
+      <point x="312.0" y="310.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.observer.EventObjectDemo" target="com.deanlee.course.pattern.observer.DoorSource">
+      <point x="21.0" y="-15.0" />
+      <point x="448.47435897435895" y="400.0" />
+      <point x="464.0" y="400.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="java.util.EventObject" target="java.io.Serializable">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="205.99999999999994" y="250.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
