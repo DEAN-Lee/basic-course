@@ -1,4 +1,4 @@
-package com.deanlee.course.pattern.observer;
+package com.deanlee.course.pattern.observer.event;
 
 /**
  * java 事件监听demo

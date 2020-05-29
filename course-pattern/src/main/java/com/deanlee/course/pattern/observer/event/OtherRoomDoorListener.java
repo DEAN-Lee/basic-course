@@ -1,4 +1,4 @@
-package com.deanlee.course.pattern.observer;
+package com.deanlee.course.pattern.observer.event;
 
 public class OtherRoomDoorListener implements DoorListener {
     @Override

@@ -1,4 +1,4 @@
-package com.deanlee.course.pattern.observer;
+package com.deanlee.course.pattern.observer.event;
 
 /**
  * 具体监听处理
