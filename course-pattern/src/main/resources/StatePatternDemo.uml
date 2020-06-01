@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.state.ConcreteStateA</OriginalElement>
+  <nodes>
+    <node x="105.19102564102563" y="240.0">com.deanlee.course.pattern.state.StateContext</node>
+    <node x="0.0" y="160.0">com.deanlee.course.pattern.state.ConcreteStateA</node>
+    <node x="44.608974358974365" y="80.0">com.deanlee.course.pattern.state.ConcreteStateB</node>
+    <node x="87.87307692307692" y="320.0">com.deanlee.course.pattern.state.StatePatternDemo</node>
+    <node x="158.27307692307693" y="0.0">com.deanlee.course.pattern.state.State</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.state.StateContext" target="com.deanlee.course.pattern.state.ConcreteStateA">
+      <point x="-60.0" y="-15.0" />
+      <point x="117.19102564102563" y="220.0" />
+      <point x="40.0" y="220.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateB" target="com.deanlee.course.pattern.state.ConcreteStateA">
+      <point x="0.0" y="15.0" />
+      <point x="124.60897435897436" y="135.0" />
+      <point x="133.33333333333334" y="135.0" />
+      <point x="53.33333333333334" y="-15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateB" target="com.deanlee.course.pattern.state.State">
+      <point x="0.0" y="-15.0" />
+      <point x="124.60897435897436" y="60.0" />
+      <point x="184.67307692307693" y="60.0" />
+      <point x="-17.599999999999994" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.StateContext" target="com.deanlee.course.pattern.state.State">
+      <point x="12.0" y="-15.0" />
+      <point x="189.19102564102565" y="210.0" />
+      <point x="215.10897435897436" y="210.0" />
+      <point x="215.10897435897436" y="60.0" />
+      <point x="202.27307692307693" y="60.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateA" target="com.deanlee.course.pattern.state.State">
+      <point x="-53.33333333333334" y="-15.0" />
+      <point x="26.666666666666657" y="135.0" />
+      <point x="34.108974358974365" y="135.0" />
+      <point x="34.108974358974365" y="50.0" />
+      <point x="167.07307692307694" y="50.0" />
+      <point x="-35.19999999999999" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateA" target="com.deanlee.course.pattern.state.ConcreteStateB">
+      <point x="0.0" y="-15.0" />
+      <point x="80.0" y="135.0" />
+      <point x="71.27564102564102" y="135.0" />
+      <point x="-53.33333333333334" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.State" target="com.deanlee.course.pattern.state.StateContext">
+      <point x="35.19999999999999" y="15.0" />
+      <point x="60.0" y="-15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.StatePatternDemo" target="com.deanlee.course.pattern.state.StateContext">
+      <point x="-44.0" y="-15.0" />
+      <point x="131.87307692307692" y="295.0" />
+      <point x="141.19102564102565" y="295.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateA" target="com.deanlee.course.pattern.state.StateContext">
+      <point x="40.0" y="15.0" />
+      <point x="120.0" y="210.0" />
+      <point x="141.19102564102565" y="210.0" />
+      <point x="-36.0" y="-15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.state.ConcreteStateB" target="com.deanlee.course.pattern.state.StateContext">
+      <point x="53.33333333333334" y="15.0" />
+      <point x="177.9423076923077" y="135.0" />
+      <point x="176.83461538461538" y="135.0" />
+      <point x="176.83461538461538" y="220.0" />
+      <point x="165.19102564102565" y="220.0" />
+      <point x="-12.0" y="-15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="170.0" y="140.99999999999997" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
