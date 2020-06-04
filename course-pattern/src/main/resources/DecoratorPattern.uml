@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.decorator.Component</OriginalElement>
+  <nodes>
+    <node x="7.865740740740733" y="79.0">com.deanlee.course.pattern.decorator.Decorator</node>
+    <node x="139.86574074074073" y="79.0">com.deanlee.course.pattern.decorator.ConcreteComponent</node>
+    <node x="0.0" y="158.0">com.deanlee.course.pattern.decorator.ConcreteDecorator</node>
+    <node x="121.75" y="237.0">com.deanlee.course.pattern.decorator.DecoratorPatternDemo</node>
+    <node x="62.185185185185176" y="0.0">com.deanlee.course.pattern.decorator.Component</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.decorator.DecoratorPatternDemo" target="com.deanlee.course.pattern.decorator.ConcreteDecorator">
+      <point x="-62.66666666666666" y="-14.5" />
+      <point x="153.08333333333334" y="212.0" />
+      <point x="83.5" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.ConcreteComponent" target="com.deanlee.course.pattern.decorator.Component">
+      <point x="2.8421709430404007E-14" y="-14.5" />
+      <point x="223.36574074074076" y="59.0" />
+      <point x="145.43518518518516" y="59.0" />
+      <point x="27.749999999999986" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.ConcreteDecorator" target="com.deanlee.course.pattern.decorator.Decorator">
+      <point x="-55.66666666666666" y="-14.5" />
+      <point x="27.833333333333343" y="133.0" />
+      <point x="35.61574074074073" y="133.0" />
+      <point x="-27.75" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.DecoratorPatternDemo" target="com.deanlee.course.pattern.decorator.Component">
+      <point x="62.666666666666686" y="-14.5" />
+      <point x="278.4166666666667" y="212.0" />
+      <point x="317.36574074074076" y="212.0" />
+      <point x="317.36574074074076" y="49.0" />
+      <point x="163.93518518518516" y="49.0" />
+      <point x="46.249999999999986" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.DecoratorPatternDemo" target="com.deanlee.course.pattern.decorator.ConcreteComponent">
+      <point x="0.0" y="-14.5" />
+      <point x="215.75" y="212.0" />
+      <point x="223.36574074074073" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.ConcreteDecorator" target="com.deanlee.course.pattern.decorator.Component">
+      <point x="55.66666666666666" y="-14.5" />
+      <point x="139.16666666666666" y="133.0" />
+      <point x="129.36574074074073" y="133.0" />
+      <point x="129.36574074074073" y="59.0" />
+      <point x="126.93518518518518" y="59.0" />
+      <point x="9.25" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.decorator.Decorator" target="com.deanlee.course.pattern.decorator.Component">
+      <point x="37.0" y="-14.5" />
+      <point x="100.36574074074073" y="59.0" />
+      <point x="108.43518518518518" y="59.0" />
+      <point x="-9.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="163.0" y="130.5" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.decorator.Component</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
