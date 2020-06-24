@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Dean github:https://github.com/DEAN-Lee
  * @Title: ConcreteAggregate
- * @Description:
+ * @Description: 实现抽象聚合类，返回一个具体迭代器的实例。
  * @date 2020/6/24 23:56
  */
 public class ConcreteAggregate implements Aggregate {

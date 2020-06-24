@@ -1,8 +1,5 @@
 package com.deanlee.course.pattern.iterator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Dean github:https://github.com/DEAN-Lee
  * @Title: Aggregate

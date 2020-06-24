@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.iterator.Aggregate</OriginalElement>
+  <nodes>
+    <node x="153.83796296296296" y="0.0">com.deanlee.course.pattern.iterator.Iterator</node>
+    <node x="78.95833333333331" y="158.0">com.deanlee.course.pattern.iterator.ConcreteAggregate</node>
+    <node x="154.91666666666669" y="237.0">com.deanlee.course.pattern.iterator.IteratorPatternDemo</node>
+    <node x="0.0" y="79.0">com.deanlee.course.pattern.iterator.ConcreteIterator</node>
+    <node x="181.25" y="79.0">com.deanlee.course.pattern.iterator.Aggregate</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.iterator.IteratorPatternDemo" target="com.deanlee.course.pattern.iterator.Iterator">
+      <point x="60.333333333333314" y="-14.5" />
+      <point x="305.75" y="212.0" />
+      <point x="302.75" y="212.0" />
+      <point x="302.75" y="59.0" />
+      <point x="244.83796296296296" y="59.0" />
+      <point x="39.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.IteratorPatternDemo" target="com.deanlee.course.pattern.iterator.Aggregate">
+      <point x="0.0" y="-14.5" />
+      <point x="245.41666666666669" y="212.0" />
+      <point x="264.5" y="212.0" />
+      <point x="27.75" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.Aggregate" target="com.deanlee.course.pattern.iterator.Iterator">
+      <point x="0.0" y="-14.5" />
+      <point x="236.75" y="59.0" />
+      <point x="218.83796296296296" y="59.0" />
+      <point x="13.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.ConcreteAggregate" target="com.deanlee.course.pattern.iterator.ConcreteIterator">
+      <point x="-55.66666666666666" y="-14.5" />
+      <point x="106.79166666666666" y="133.0" />
+      <point x="80.0" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.IteratorPatternDemo" target="com.deanlee.course.pattern.iterator.ConcreteAggregate">
+      <point x="-60.33333333333334" y="-14.5" />
+      <point x="185.08333333333331" y="212.0" />
+      <point x="162.45833333333331" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.ConcreteAggregate" target="com.deanlee.course.pattern.iterator.Iterator">
+      <point x="0.0" y="-14.5" />
+      <point x="162.45833333333331" y="133.0" />
+      <point x="170.5" y="133.0" />
+      <point x="170.5" y="59.0" />
+      <point x="192.83796296296296" y="59.0" />
+      <point x="-13.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.ConcreteIterator" target="com.deanlee.course.pattern.iterator.Iterator">
+      <point x="0.0" y="-14.5" />
+      <point x="80.0" y="49.0" />
+      <point x="166.83796296296296" y="49.0" />
+      <point x="-39.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.iterator.ConcreteAggregate" target="com.deanlee.course.pattern.iterator.Aggregate">
+      <point x="55.66666666666666" y="-14.5" />
+      <point x="218.12499999999997" y="133.0" />
+      <point x="209.0" y="133.0" />
+      <point x="-27.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="311.5" y="167.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
