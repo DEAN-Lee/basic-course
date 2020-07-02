@@ -14,6 +14,6 @@ public class ConcreteVisitorA implements Visitor {
 
     @Override
     public void visit(ConcreteElementB element) {
-        System.out.println("具体访问者A访问-->"+element.operationa());
+        System.out.println("具体访问者A访问-->"+element.operationB());
     }
 }
