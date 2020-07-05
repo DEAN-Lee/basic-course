@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.bridge.Abstraction</OriginalElement>
+  <nodes>
+    <node x="0.0" y="158.0">com.deanlee.course.pattern.bridge.RefinedAbstraction</node>
+    <node x="101.34166666666667" y="0.0">com.deanlee.course.pattern.bridge.Implementor</node>
+    <node x="215.09166666666664" y="79.0">com.deanlee.course.pattern.bridge.ConcreteImplementorA</node>
+    <node x="70.09166666666667" y="79.0">com.deanlee.course.pattern.bridge.Abstraction</node>
+    <node x="168.4166666666667" y="237.0">com.deanlee.course.pattern.bridge.BridgePatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.bridge.BridgePatternDemo" target="com.deanlee.course.pattern.bridge.Implementor">
+      <point x="62.62499999999997" y="-14.5" />
+      <point x="314.5416666666667" y="212.0" />
+      <point x="413.5916666666667" y="212.0" />
+      <point x="413.5916666666667" y="49.0" />
+      <point x="213.84166666666667" y="49.0" />
+      <point x="50.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.BridgePatternDemo" target="com.deanlee.course.pattern.bridge.RefinedAbstraction">
+      <point x="-62.62500000000003" y="-14.5" />
+      <point x="189.29166666666669" y="212.0" />
+      <point x="87.0" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.BridgePatternDemo" target="com.deanlee.course.pattern.bridge.ConcreteImplementorA">
+      <point x="20.87499999999997" y="-14.5" />
+      <point x="272.7916666666667" y="212.0" />
+      <point x="309.09166666666664" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.ConcreteImplementorA" target="com.deanlee.course.pattern.bridge.Implementor">
+      <point x="0.0" y="-14.5" />
+      <point x="309.09166666666664" y="59.0" />
+      <point x="188.84166666666667" y="59.0" />
+      <point x="25.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.RefinedAbstraction" target="com.deanlee.course.pattern.bridge.Abstraction">
+      <point x="0.0" y="-14.5" />
+      <point x="87.0" y="133.0" />
+      <point x="90.92500000000001" y="133.0" />
+      <point x="-41.66666666666666" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.RefinedAbstraction" target="com.deanlee.course.pattern.bridge.Implementor">
+      <point x="-58.0" y="-14.5" />
+      <point x="29.0" y="133.0" />
+      <point x="59.59166666666667" y="133.0" />
+      <point x="59.59166666666667" y="49.0" />
+      <point x="113.84166666666667" y="49.0" />
+      <point x="-50.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.Abstraction" target="com.deanlee.course.pattern.bridge.Implementor">
+      <point x="31.25" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.bridge.BridgePatternDemo" target="com.deanlee.course.pattern.bridge.Abstraction">
+      <point x="-20.87500000000003" y="-14.5" />
+      <point x="231.04166666666669" y="212.0" />
+      <point x="216.22083333333333" y="212.0" />
+      <point x="216.22083333333333" y="133.0" />
+      <point x="174.25833333333333" y="133.0" />
+      <point x="41.66666666666666" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="193.0" y="130.5" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.bridge.Abstraction</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
