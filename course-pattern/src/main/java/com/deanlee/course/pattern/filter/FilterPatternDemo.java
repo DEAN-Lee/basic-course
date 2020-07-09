@@ -30,7 +30,7 @@ import java.util.List;
  * 3)过滤器的独立性:每种过滤器必须是独立的实体,其状态不受其它过滤器的影响,每个过滤器都有自己独立的数据输入输出接口,只要各个过滤器之间
  * 传送的数据遵守共同的规约就可以相连接。
  */
-public class filterPatternDemo {
+public class FilterPatternDemo {
     public static void main(String[] args) {
         List<Person> persons = new ArrayList<Person>();
 
@@ -50,13 +50,13 @@ public class filterPatternDemo {
         System.out.println("Males: ");
         printPersons(male.meetCriteria(persons));
 
-        System.out.println("\nFemales: ");
+        System.out.println("Females: ");
         printPersons(female.meetCriteria(persons));
 
-        System.out.println("\nSingle Males: ");
+        System.out.println("Single Males: ");
         printPersons(singleMale.meetCriteria(persons));
 
-        System.out.println("\nSingle Or Females: ");
+        System.out.println("Single Or Females: ");
         printPersons(singleOrFemale.meetCriteria(persons));
     }
 
