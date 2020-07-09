@@ -3,131 +3,131 @@
   <ID>JAVA</ID>
   <OriginalElement>com.deanlee.course.pattern.filter.AndCriteria</OriginalElement>
   <nodes>
-    <node x="190.5" y="210.0">com.deanlee.course.pattern.filter.CriteriaSingle</node>
-    <node x="448.94444444444446" y="100.0">com.deanlee.course.pattern.filter.Criteria</node>
-    <node x="675.5" y="210.0">com.deanlee.course.pattern.filter.CriteriaMale</node>
-    <node x="378.7944444444445" y="310.0">com.deanlee.course.pattern.filter.filterPatternDemo</node>
-    <node x="10.5" y="210.0">com.deanlee.course.pattern.filter.CriteriaFemale</node>
-    <node x="519.5" y="210.0">com.deanlee.course.pattern.filter.AndCriteria</node>
-    <node x="370.5" y="210.0">com.deanlee.course.pattern.filter.OrCriteria</node>
-    <node x="396.95000000000005" y="0.0">com.deanlee.course.pattern.filter.Person</node>
+    <node x="21.499999999999943" y="210.0">com.deanlee.course.pattern.filter.CriteriaSingle</node>
+    <node x="295.1777777777777" y="100.0">com.deanlee.course.pattern.filter.Criteria</node>
+    <node x="686.5" y="210.0">com.deanlee.course.pattern.filter.CriteriaMale</node>
+    <node x="506.5" y="210.0">com.deanlee.course.pattern.filter.CriteriaFemale</node>
+    <node x="201.49999999999994" y="210.0">com.deanlee.course.pattern.filter.AndCriteria</node>
+    <node x="358.49999999999994" y="210.0">com.deanlee.course.pattern.filter.OrCriteria</node>
+    <node x="214.28888888888883" y="310.0">com.deanlee.course.pattern.filter.FilterPatternDemo</node>
+    <node x="238.04999999999995" y="0.0">com.deanlee.course.pattern.filter.Person</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.Person">
+      <point x="-57.5" y="-15.0" />
+      <point x="248.78888888888883" y="280.0" />
+      <point x="11.0" y="280.0" />
+      <point x="11.0" y="60.0" />
+      <point x="256.04999999999995" y="60.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
     <edge source="com.deanlee.course.pattern.filter.CriteriaSingle" target="com.deanlee.course.pattern.filter.Criteria">
       <point x="40.0" y="-15.0" />
-      <point x="310.5" y="160.0" />
-      <point x="465.74444444444447" y="160.0" />
-      <point x="-39.19999999999999" y="15.0" />
+      <point x="141.49999999999994" y="160.0" />
+      <point x="300.7777777777777" y="160.0" />
+      <point x="-50.39999999999998" y="15.0" />
     </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.Person">
-      <point x="80.49999999999994" y="-15.0" />
-      <point x="551.2944444444445" y="290.0" />
-      <point x="830.0" y="290.0" />
-      <point x="830.0" y="50.0" />
-      <point x="486.95000000000005" y="50.0" />
-      <point x="42.0" y="15.0" />
-    </edge>
-    <edge source="com.deanlee.course.pattern.filter.AndCriteria" target="com.deanlee.course.pattern.filter.Person">
-      <point x="51.0" y="-15.0" />
-      <point x="638.5" y="70.0" />
-      <point x="462.95000000000005" y="70.0" />
-      <point x="18.0" y="15.0" />
-    </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaFemale">
-      <point x="-57.50000000000006" y="-15.0" />
-      <point x="413.2944444444445" y="280.0" />
-      <point x="90.5" y="280.0" />
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaFemale">
+      <point x="57.5" y="-15.0" />
+      <point x="363.78888888888883" y="280.0" />
+      <point x="586.5" y="280.0" />
       <point x="0.0" y="15.0" />
     </edge>
+    <edge source="com.deanlee.course.pattern.filter.AndCriteria" target="com.deanlee.course.pattern.filter.Person">
+      <point x="-51.0" y="-15.0" />
+      <point x="218.49999999999994" y="80.0" />
+      <point x="280.04999999999995" y="80.0" />
+      <point x="-6.0" y="15.0" />
+    </edge>
     <edge source="com.deanlee.course.pattern.filter.AndCriteria" target="com.deanlee.course.pattern.filter.Criteria">
-      <point x="17.0" y="-15.0" />
-      <point x="604.5" y="170.0" />
-      <point x="544.1444444444444" y="170.0" />
-      <point x="39.19999999999999" y="15.0" />
+      <point x="51.0" y="-15.0" />
+      <point x="320.49999999999994" y="190.0" />
+      <point x="334.37777777777774" y="190.0" />
+      <point x="-16.80000000000001" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.CriteriaMale" target="com.deanlee.course.pattern.filter.Criteria">
       <point x="-36.0" y="-15.0" />
-      <point x="711.5" y="160.0" />
-      <point x="555.3444444444444" y="160.0" />
-      <point x="50.400000000000034" y="15.0" />
+      <point x="722.5" y="150.0" />
+      <point x="401.57777777777767" y="150.0" />
+      <point x="50.39999999999998" y="15.0" />
     </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaSingle">
-      <point x="-34.50000000000006" y="-15.0" />
-      <point x="436.2944444444445" y="270.0" />
-      <point x="270.5" y="270.0" />
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.OrCriteria">
+      <point x="34.5" y="-15.0" />
+      <point x="340.78888888888883" y="270.0" />
+      <point x="422.49999999999994" y="270.0" />
       <point x="0.0" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.CriteriaFemale" target="com.deanlee.course.pattern.filter.Person">
-      <point x="-40.0" y="-15.0" />
-      <point x="50.5" y="60.0" />
-      <point x="414.95000000000005" y="60.0" />
-      <point x="-30.0" y="15.0" />
+      <point x="40.0" y="-15.0" />
+      <point x="626.5" y="60.0" />
+      <point x="316.04999999999995" y="60.0" />
+      <point x="30.0" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.Criteria" target="com.deanlee.course.pattern.filter.Person">
-      <point x="5.6843418860808015E-14" y="-15.0" />
-      <point x="504.9444444444445" y="80.0" />
-      <point x="450.95000000000005" y="80.0" />
+      <point x="0.0" y="-15.0" />
+      <point x="351.1777777777777" y="80.0" />
+      <point x="292.04999999999995" y="80.0" />
       <point x="6.0" y="15.0" />
     </edge>
-    <edge source="com.deanlee.course.pattern.filter.CriteriaFemale" target="com.deanlee.course.pattern.filter.Criteria">
-      <point x="40.0" y="-15.0" />
-      <point x="130.5" y="150.0" />
-      <point x="454.5444444444445" y="150.0" />
-      <point x="-50.39999999999998" y="15.0" />
-    </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.Criteria">
-      <point x="11.499999999999943" y="-15.0" />
-      <point x="482.2944444444445" y="260.0" />
-      <point x="509.0" y="260.0" />
-      <point x="509.0" y="190.0" />
-      <point x="510.5444444444445" y="190.0" />
-      <point x="5.600000000000023" y="15.0" />
-    </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.AndCriteria">
-      <point x="34.49999999999994" y="-15.0" />
-      <point x="505.2944444444445" y="270.0" />
-      <point x="587.5" y="270.0" />
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaSingle">
+      <point x="-34.5" y="-15.0" />
+      <point x="271.78888888888883" y="270.0" />
+      <point x="101.49999999999994" y="270.0" />
       <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.filter.CriteriaFemale" target="com.deanlee.course.pattern.filter.Criteria">
+      <point x="-39.99999999999997" y="-15.0" />
+      <point x="546.5" y="160.0" />
+      <point x="390.37777777777774" y="160.0" />
+      <point x="39.200000000000045" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.OrCriteria" target="com.deanlee.course.pattern.filter.Criteria">
       <point x="16.0" y="-15.0" />
-      <point x="450.5" y="180.0" />
-      <point x="488.14444444444445" y="180.0" />
-      <point x="-16.80000000000001" y="15.0" />
+      <point x="438.49999999999994" y="170.0" />
+      <point x="379.1777777777777" y="170.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.AndCriteria">
+      <point x="-11.5" y="-15.0" />
+      <point x="294.78888888888883" y="260.0" />
+      <point x="269.49999999999994" y="260.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.Criteria">
+      <point x="11.5" y="-15.0" />
+      <point x="317.78888888888883" y="260.0" />
+      <point x="347.99999999999994" y="260.0" />
+      <point x="347.99999999999994" y="190.0" />
+      <point x="345.5777777777778" y="190.0" />
+      <point x="-5.599999999999966" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.CriteriaMale" target="com.deanlee.course.pattern.filter.Person">
       <point x="36.0" y="-15.0" />
-      <point x="783.5" y="60.0" />
-      <point x="474.95000000000005" y="60.0" />
-      <point x="30.0" y="15.0" />
+      <point x="794.5" y="50.0" />
+      <point x="328.04999999999995" y="50.0" />
+      <point x="42.0" y="15.0" />
     </edge>
     <edge source="com.deanlee.course.pattern.filter.CriteriaSingle" target="com.deanlee.course.pattern.filter.Person">
       <point x="-40.0" y="-15.0" />
-      <point x="230.50000000000003" y="70.0" />
-      <point x="426.95000000000005" y="70.0" />
+      <point x="61.49999999999994" y="70.0" />
+      <point x="268.04999999999995" y="70.0" />
       <point x="-18.0" y="15.0" />
     </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.OrCriteria">
-      <point x="-11.500000000000057" y="-15.0" />
-      <point x="459.2944444444445" y="260.0" />
-      <point x="434.5" y="260.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
     <edge source="com.deanlee.course.pattern.filter.OrCriteria" target="com.deanlee.course.pattern.filter.Person">
-      <point x="-48.0" y="-15.0" />
-      <point x="386.5" y="80.0" />
-      <point x="438.95000000000005" y="80.0" />
-      <point x="-6.0" y="15.0" />
+      <point x="47.999999999999986" y="-15.0" />
+      <point x="470.49999999999994" y="70.0" />
+      <point x="304.04999999999995" y="70.0" />
+      <point x="18.0" y="15.0" />
     </edge>
-    <edge source="com.deanlee.course.pattern.filter.filterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaMale">
-      <point x="57.49999999999994" y="-15.0" />
-      <point x="528.2944444444445" y="280.0" />
-      <point x="747.5" y="280.0" />
+    <edge source="com.deanlee.course.pattern.filter.FilterPatternDemo" target="com.deanlee.course.pattern.filter.CriteriaMale">
+      <point x="80.5" y="-15.0" />
+      <point x="386.78888888888883" y="290.0" />
+      <point x="758.5" y="290.0" />
       <point x="0.0" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.1" x="403.99999999999994" y="92.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="404.0" y="92.5" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
