@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.facade.CircleShape</OriginalElement>
+  <nodes>
+    <node x="311.0" y="79.0">com.deanlee.course.pattern.facade.CircleShape</node>
+    <node x="265.3928571428571" y="0.0">com.deanlee.course.pattern.facade.Shape</node>
+    <node x="217.49999999999997" y="237.0">com.deanlee.course.pattern.facade.FacadePatternDemo</node>
+    <node x="241.99999999999997" y="158.0">com.deanlee.course.pattern.facade.ShapeMaker</node>
+    <node x="165.99999999999997" y="79.0">com.deanlee.course.pattern.facade.SquareShape</node>
+    <node x="0.0" y="79.0">com.deanlee.course.pattern.facade.RectangleShape</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.facade.ShapeMaker" target="com.deanlee.course.pattern.facade.CircleShape">
+      <point x="14.75" y="-14.5" />
+      <point x="315.75" y="128.0" />
+      <point x="373.5" y="128.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.FacadePatternDemo" target="com.deanlee.course.pattern.facade.ShapeMaker">
+      <point x="41.75" y="-14.5" />
+      <point x="342.75" y="212.0" />
+      <point x="330.5" y="212.0" />
+      <point x="29.5" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.ShapeMaker" target="com.deanlee.course.pattern.facade.SquareShape">
+      <point x="-14.75" y="-14.5" />
+      <point x="286.25" y="128.0" />
+      <point x="228.49999999999997" y="128.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.ShapeMaker" target="com.deanlee.course.pattern.facade.RectangleShape">
+      <point x="-44.25" y="-14.5" />
+      <point x="256.75" y="138.0" />
+      <point x="73.0" y="138.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.CircleShape" target="com.deanlee.course.pattern.facade.Shape">
+      <point x="0.0" y="-14.5" />
+      <point x="373.5" y="59.0" />
+      <point x="317.2678571428571" y="59.0" />
+      <point x="10.375" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.RectangleShape" target="com.deanlee.course.pattern.facade.Shape">
+      <point x="2.8421709430404007E-14" y="-14.5" />
+      <point x="73.00000000000003" y="49.0" />
+      <point x="275.7678571428571" y="49.0" />
+      <point x="-31.125" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.SquareShape" target="com.deanlee.course.pattern.facade.Shape">
+      <point x="0.0" y="-14.5" />
+      <point x="228.49999999999997" y="59.0" />
+      <point x="296.5178571428571" y="59.0" />
+      <point x="-10.375" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.facade.ShapeMaker" target="com.deanlee.course.pattern.facade.Shape">
+      <point x="44.25" y="-14.5" />
+      <point x="345.25" y="138.0" />
+      <point x="446.5" y="138.0" />
+      <point x="446.5" y="49.0" />
+      <point x="338.0178571428571" y="49.0" />
+      <point x="31.125" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="217.99999999999994" y="162.09090909090907" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
