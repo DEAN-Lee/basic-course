@@ -9,6 +9,10 @@ package com.deanlee.course.pattern.composite;
 public class Leaf implements Component {
     private String name;
 
+    public Leaf(String name) {
+        this.name = name;
+    }
+
     @Override
     public void add(Component c) {
 
