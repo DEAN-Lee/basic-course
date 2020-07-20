@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.composite.Component</OriginalElement>
+  <nodes>
+    <node x="0.0" y="89.0">com.deanlee.course.pattern.composite.Composite</node>
+    <node x="44.32976190476191" y="0.0">com.deanlee.course.pattern.composite.Component</node>
+    <node x="131.0" y="89.0">com.deanlee.course.pattern.composite.Leaf</node>
+    <node x="58.25773809523811" y="168.0">com.deanlee.course.pattern.composite.CompositePatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.composite.Composite" target="com.deanlee.course.pattern.composite.Component">
+      <point x="-41.625" y="-14.5" />
+      <point x="13.875" y="49.0" />
+      <point x="52.25833333333334" y="49.0" />
+      <point x="-47.57142857142857" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.composite.CompositePatternDemo" target="com.deanlee.course.pattern.composite.Composite">
+      <point x="-62.66666666666666" y="-14.5" />
+      <point x="89.59107142857145" y="143.0" />
+      <point x="55.5" y="143.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.composite.CompositePatternDemo" target="com.deanlee.course.pattern.composite.Component">
+      <point x="62.66666666666666" y="-14.5" />
+      <point x="214.92440476190478" y="143.0" />
+      <point x="217.5" y="143.0" />
+      <point x="217.5" y="49.0" />
+      <point x="147.4011904761905" y="49.0" />
+      <point x="47.571428571428584" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.composite.Leaf" target="com.deanlee.course.pattern.composite.Component">
+      <point x="-19.0" y="-14.5" />
+      <point x="150.0" y="69.0" />
+      <point x="115.68690476190476" y="69.0" />
+      <point x="15.857142857142847" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.composite.CompositePatternDemo" target="com.deanlee.course.pattern.composite.Leaf">
+      <point x="0.0" y="-14.5" />
+      <point x="152.2577380952381" y="143.0" />
+      <point x="169.0" y="143.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="103.5" y="91.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
