@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.command.Command</OriginalElement>
+  <nodes>
+    <node x="26.95833333333333" y="0.0">com.deanlee.course.pattern.command.Command</node>
+    <node x="150.3125" y="79.0">com.deanlee.course.pattern.command.ConcreteCommand</node>
+    <node x="33.3125" y="79.0">com.deanlee.course.pattern.command.Invoker</node>
+    <node x="200.8125" y="0.0">com.deanlee.course.pattern.command.Receiver</node>
+    <node x="0.0" y="158.0">com.deanlee.course.pattern.command.CommandPatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.command.CommandPatternDemo" target="com.deanlee.course.pattern.command.Command">
+      <point x="-65.25" y="-14.5" />
+      <point x="21.75" y="133.0" />
+      <point x="22.8125" y="133.0" />
+      <point x="22.8125" y="54.0" />
+      <point x="39.08333333333333" y="54.0" />
+      <point x="-36.375" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.command.CommandPatternDemo" target="com.deanlee.course.pattern.command.Invoker">
+      <point x="-21.75" y="-14.5" />
+      <point x="65.25" y="133.0" />
+      <point x="57.5625" y="133.0" />
+      <point x="-24.25" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.command.ConcreteCommand" target="com.deanlee.course.pattern.command.Command">
+      <point x="-51.0" y="-14.5" />
+      <point x="175.8125" y="54.0" />
+      <point x="111.83333333333333" y="54.0" />
+      <point x="36.375" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.command.Invoker" target="com.deanlee.course.pattern.command.Command">
+      <point x="-24.25" y="-14.5" />
+      <point x="57.5625" y="54.0" />
+      <point x="63.33333333333333" y="54.0" />
+      <point x="-12.125" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.command.CommandPatternDemo" target="com.deanlee.course.pattern.command.ConcreteCommand">
+      <point x="65.25" y="-14.5" />
+      <point x="152.25" y="133.0" />
+      <point x="226.8125" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.command.ConcreteCommand" target="com.deanlee.course.pattern.command.Receiver">
+      <point x="0.0" y="-14.5" />
+      <point x="-26.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="123.0" y="128.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
