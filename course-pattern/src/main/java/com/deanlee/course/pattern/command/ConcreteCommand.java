@@ -15,6 +15,6 @@ public class ConcreteCommand implements Command {
 
     @Override
     public void execute() {
-
+        receiver.action();
     }
 }
