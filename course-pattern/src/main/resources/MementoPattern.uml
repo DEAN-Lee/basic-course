@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.memento.Caretaker</OriginalElement>
+  <nodes>
+    <node x="140.0" y="80.0">com.deanlee.course.pattern.memento.Originator</node>
+    <node x="79.0" y="0.0">com.deanlee.course.pattern.memento.Memento</node>
+    <node x="0.0" y="80.0">com.deanlee.course.pattern.memento.Caretaker</node>
+    <node x="35.0" y="160.0">com.deanlee.course.pattern.memento.MementoPatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.memento.Originator" target="com.deanlee.course.pattern.memento.Memento">
+      <point x="32.0" y="-15.0" />
+      <point x="236.0" y="50.0" />
+      <point x="170.0" y="50.0" />
+      <point x="39.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.memento.Caretaker" target="com.deanlee.course.pattern.memento.Memento">
+      <point x="30.0" y="-15.0" />
+      <point x="90.0" y="60.0" />
+      <point x="118.0" y="60.0" />
+      <point x="-13.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.memento.MementoPatternDemo" target="com.deanlee.course.pattern.memento.Caretaker">
+      <point x="-72.0" y="-15.0" />
+      <point x="59.0" y="135.0" />
+      <point x="30.0" y="135.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.memento.MementoPatternDemo" target="com.deanlee.course.pattern.memento.Originator">
+      <point x="72.0" y="-15.0" />
+      <point x="203.0" y="135.0" />
+      <point x="236.0" y="135.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="96.0" y="127.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
