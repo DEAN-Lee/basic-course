@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.deanlee.course.pattern.interpreter.AndExpression</OriginalElement>
+  <nodes>
+    <node x="0.0" y="80.0">com.deanlee.course.pattern.interpreter.TerminalExpression</node>
+    <node x="212.0" y="80.0">com.deanlee.course.pattern.interpreter.AndExpression</node>
+    <node x="248.66666666666669" y="0.0">com.deanlee.course.pattern.interpreter.Expression</node>
+    <node x="271.75" y="160.0">com.deanlee.course.pattern.interpreter.Context</node>
+    <node x="194.58333333333331" y="240.0">com.deanlee.course.pattern.interpreter.InterpreterPatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.deanlee.course.pattern.interpreter.InterpreterPatternDemo" target="com.deanlee.course.pattern.interpreter.Context">
+      <point x="56.0" y="-15.0" />
+      <point x="362.5833333333333" y="215.0" />
+      <point x="349.75" y="215.0" />
+      <point x="26.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.interpreter.Context" target="com.deanlee.course.pattern.interpreter.TerminalExpression">
+      <point x="-39.0" y="-15.0" />
+      <point x="284.75" y="140.0" />
+      <point x="96.0" y="140.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.interpreter.AndExpression" target="com.deanlee.course.pattern.interpreter.Expression">
+      <point x="0.0" y="-15.0" />
+      <point x="288.0" y="60.0" />
+      <point x="302.0" y="60.0" />
+      <point x="-10.666666666666686" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.interpreter.Context" target="com.deanlee.course.pattern.interpreter.Expression">
+      <point x="39.0" y="-15.0" />
+      <point x="362.75" y="140.0" />
+      <point x="385.5" y="140.0" />
+      <point x="385.5" y="50.0" />
+      <point x="366.0" y="50.0" />
+      <point x="53.333333333333314" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.interpreter.Context" target="com.deanlee.course.pattern.interpreter.AndExpression">
+      <point x="-13.0" y="-15.0" />
+      <point x="310.75" y="130.0" />
+      <point x="288.0" y="130.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.deanlee.course.pattern.interpreter.TerminalExpression" target="com.deanlee.course.pattern.interpreter.Expression">
+      <point x="0.0" y="-15.0" />
+      <point x="96.0" y="50.0" />
+      <point x="259.33333333333337" y="50.0" />
+      <point x="-53.333333333333314" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="182.0" y="130.0" />
+  <SelectedNodes>
+    <node>com.deanlee.course.pattern.interpreter.AndExpression</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
