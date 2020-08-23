@@ -1,7 +1,5 @@
 package org.deanlee.course.algorithm.sort;
 
-import java.util.List;
-
 /**
  * @author Dean github:https://github.com/DEAN-Lee
  * @Title: BubbleSort
