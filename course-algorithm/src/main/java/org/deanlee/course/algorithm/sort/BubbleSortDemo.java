@@ -16,13 +16,13 @@ package org.deanlee.course.algorithm.sort;
  */
 public class BubbleSortDemo {
     public static void main(String[] args) {
-        int[] sortArr=new int[]{3,5, 1, 5, 6, 1, 20, 25};
+        int[] sortArr = new int[]{3, 5, 1, 4, 6, 30, 20, 25};
         bubbleSort(sortArr);
     }
 
     private static void bubbleSort(int[] arr) {
         for (int i : arr) {
-            System.out.printf(arr[i] + " ");
+            System.out.printf(i + " ");
         }
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -34,7 +34,7 @@ public class BubbleSortDemo {
             }
         }
         for (int i : arr) {
-            System.out.printf(arr[i] + " ");
+            System.out.printf(i + " ");
         }
 
     }
