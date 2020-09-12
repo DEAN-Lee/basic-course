@@ -13,68 +13,60 @@ public class HeapSortDemo {
 
     public static void main(String[] args) {
         int[] sortArr = new int[]{3, 5, 1, 5, 6, 1, 20, 25};
-        for (int i : HeapSort(sortArr)) {
+        for (int i : heapSort(sortArr)) {
             System.out.printf(i + " ");
         }
     }
 
-    /**
-     * 堆排序算法
-     *
-     * @param array
-     * @return
-     */
-    public static int[] HeapSort(int[] array) {
-        len = array.length;
-        if (len < 1) return array;
-        //1.构建一个最大堆
-        buildMaxHeap(array);
-        //2.循环将堆首位（最大值）与末位交换，然后在重新调整最大堆
-        while (len > 0) {
-            swap(array, 0, len - 1);
+    public static int[] heapSort(int[] arr) {
+
+        int len = arr.length;
+        // 构建大顶堆，这里其实就是把待排序序列，变成一个大顶堆结构的数组
+        buildMaxHeap(arr, len);
+
+        // 交换堆顶和当前末尾的节点，重置大顶堆
+        for (int i = len - 1; i > 0; i--) {
+            swap(arr, 0, i);
             len--;
-            adjustHeap(array, 0);
+            heapify(arr, 0, len);
         }
-        return array;
+        return arr;
     }
 
-    /**
-     * 建立最大堆
-     *
-     * @param array
-     */
-    public static void buildMaxHeap(int[] array) {
-        //从最后一个非叶子节点开始向上构造最大堆
-        //for循环这样写会更好一点：i的左子树和右子树分别2i+1和2(i+1)
-        for (int i = (len / 2 - 1); i >= 0; i--) {
-            adjustHeap(array, i);
+    private static void buildMaxHeap(int[] arr, int len) {
+        // 从最后一个非叶节点开始向前遍历，调整节点性质，使之成为大顶堆
+        for (int i = (int) Math.floor(len / 2) - 1; i >= 0; i--) {
+            heapify(arr, i, len);
         }
     }
 
-    /**
-     * 调整使之成为最大堆
-     *
-     * @param array
-     * @param i
-     */
-    public static void adjustHeap(int[] array, int i) {
-        int maxIndex = i;
-        //如果有左子树，且左子树大于父节点，则将最大指针指向左子树
-        if (i * 2 < len && array[i * 2] > array[maxIndex])
-            maxIndex = i * 2 + 1;
-        //如果有右子树，且右子树大于父节点，则将最大指针指向右子树
-        if (i * 2 + 1 < len && array[i * 2 + 1] > array[maxIndex])
-            maxIndex = i * 2 + 2;
-        //如果父节点不是最大值，则将父节点与最大值交换，并且递归调整与父节点交换的位置。
-        if (maxIndex != i) {
-            swap(array, maxIndex, i);
-            adjustHeap(array, maxIndex);
+    private static void heapify(int[] arr, int i, int len) {
+        // 先根据堆性质，找出它左右节点的索引
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+        // 默认当前节点（父节点）是最大值。
+        int largestIndex = i;
+        if (left < len && arr[left] > arr[largestIndex]) {
+            // 如果有左节点，并且左节点的值更大，更新最大值的索引
+            largestIndex = left;
+        }
+        if (right < len && arr[right] > arr[largestIndex]) {
+            // 如果有右节点，并且右节点的值更大，更新最大值的索引
+            largestIndex = right;
+        }
+
+        if (largestIndex != i) {
+            // 如果最大值不是当前非叶子节点的值，那么就把当前节点和最大值的子节点值互换
+            swap(arr, i, largestIndex);
+            // 因为互换之后，子节点的值变了，如果该子节点也有自己的子节点，仍需要再次调整。
+            heapify(arr, largestIndex, len);
         }
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
 }
