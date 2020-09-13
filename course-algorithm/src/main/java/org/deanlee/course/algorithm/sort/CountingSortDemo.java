@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author Dean github:https://github.com/DEAN-Lee
  * @Title: CountingSortDemo
- * @Description: 计数排序
+ * @Description: 计数排序  额外空间
  * @date 2020/9/13 22:29
  */
 public class CountingSortDemo {
