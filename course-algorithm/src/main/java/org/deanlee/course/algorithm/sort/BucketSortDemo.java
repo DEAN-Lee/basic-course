@@ -2,7 +2,6 @@ package org.deanlee.course.algorithm.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author Dean github:https://github.com/DEAN-Lee
