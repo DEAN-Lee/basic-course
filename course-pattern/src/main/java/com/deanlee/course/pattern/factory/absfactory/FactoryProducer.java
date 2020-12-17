@@ -1,6 +1,5 @@
 package com.deanlee.course.pattern.factory.absfactory;
 
-import com.deanlee.course.pattern.factory.simple.ShorthairCat;
 
 /**
  * @author Dean github:https://github.com/DEAN-Lee
