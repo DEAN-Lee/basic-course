@@ -8,6 +8,8 @@ package org.deanlee.course.algorithm.sort;
  */
 public class HeapSortDemo {
     //声明全局变量，用于记录数组array的长度；
+
+
     static int len;
 
 
