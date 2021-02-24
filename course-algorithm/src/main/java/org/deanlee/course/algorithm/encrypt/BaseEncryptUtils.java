@@ -2,6 +2,11 @@ package org.deanlee.course.algorithm.encrypt;
 
 import java.security.MessageDigest;
 
+/**
+ * 基础简单加密方法-base64 sha md5 等
+ * @author LiMeng
+ * @date 2021-2-23 17:22:41
+ */
 public class BaseEncryptUtils {
     public static final String KEY_SHA = "SHA";
     public static final String KEY_MD5 = "MD5";
