@@ -215,27 +215,21 @@ public class RSA {
         System.out.println("publicKey = " + publicKey);
         System.out.println("privateKey = " + privateKey);
 
-
-
         JSONObject jsonParams = new JSONObject(); // json参数
         jsonParams.put("token", "211313");
         jsonParams.put("appid", "234225");
         String json = jsonParams.toString(); // json参数明文
-        System.out.println("请求json明文 : " + json);
+        System.out.println("加密前 请求明文 : " + json);
 
         PublicKey pubKey = RSAUtils.loadPublicKey(publicKey);
         PrivateKey priKey = RSAUtils.loadPrivateKey(privateKey);
 
-        byte[] b = RSAUtils.encryptByPublicKey(json.getBytes("UTF-8"), pubKey); //为参数进行加密
-        System.out.println(new String(b));
-        byte[] data = RSAUtils.decryptByPublicKey(b, pubKey);
-
-
-
-        String signature = RSA.sign(b, privateKey); //用加密后的数据加签
-
-        System.out.println("result = " + verify(b, publicKey, signature));
+        byte[] b = RSAUtils.encryptByPublicKey(json.getBytes("UTF-8"), pubKey); //公钥加密
+        byte[] data = RSAUtils.decryptByPrivateKey(b, priKey);//私钥解密
         System.out.println("解密后 = " + new String(data, "UTF-8"));
+
+        String signature = RSA.sign(b, privateKey); //用私钥对加密后的数据加签
+        System.out.println("verify result = " + verify(b, publicKey, signature));//用公钥对加签验证
     }
 
 
