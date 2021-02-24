@@ -20,13 +20,13 @@ public final class RSAUtils {
     private static final String V = "RSA";
     public static final String SIGNATURE_ALGORITHM = "SHA1withRSA";
 
-    /** */
+   
     /**
      * RSA最大加密明文大小
      */
     private static final int MAX_ENCRYPT_BLOCK = 117;
 
-    /** */
+   
     /**
      * RSA最大解密密文大小
      */
@@ -65,11 +65,11 @@ public final class RSAUtils {
      *
      * @param data
      *            需加密数据的byte数据
-     * @param pubKey
+     * @param publicKey
      *            公钥
      * @return 加密后的byte型数据
      */
-	/*public static byte[] encryptData(byte[] data, PublicKey publicKey) {
+	public static byte[] encryptData(byte[] data, PublicKey publicKey) {
 		try {
 			Cipher cipher = Cipher.getInstance(RSA);
 			// 编码前设定编码方式及密钥
@@ -80,7 +80,7 @@ public final class RSAUtils {
 			e.printStackTrace();
 			return null;
 		}
-	}*/
+	}
 
     /**
      * 用私钥解密
@@ -91,7 +91,7 @@ public final class RSAUtils {
      *            私钥
      * @return
      */
-	/*public static byte[] decryptData(byte[] encryptedData, PrivateKey privateKey) {
+	public static byte[] decryptData(byte[] encryptedData, PrivateKey privateKey) {
 		try {
 			Cipher cipher = Cipher.getInstance(RSA);
 			cipher.init(Cipher.DECRYPT_MODE, privateKey);
@@ -99,7 +99,7 @@ public final class RSAUtils {
 		} catch (Exception e) {
 			return null;
 		}
-	}*/
+	}
 
     /**
      * 通过公钥byte[](publicKey.getEncoded())将公钥还原，适用于RSA算法
@@ -304,7 +304,6 @@ public final class RSAUtils {
         return resu.toString();
     }
 
-    /** */
     /**
      * <P>
      * 私钥解密
@@ -340,7 +339,6 @@ public final class RSAUtils {
         return decryptedData;
     }
 
-    /** */
     /**
      * <p>
      * 公钥解密
@@ -378,7 +376,7 @@ public final class RSAUtils {
         return decryptedData;
     }
 
-    /** */
+   
     /**
      * <p>
      * 公钥加密
@@ -417,7 +415,7 @@ public final class RSAUtils {
         return encryptedData;
     }
 
-    /** */
+   
     /**
      * <p>
      * 私钥加密
