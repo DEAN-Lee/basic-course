@@ -59,4 +59,5 @@ public class BaseEncryptUtils {
         return sha.digest();
     }
 
+
 }
