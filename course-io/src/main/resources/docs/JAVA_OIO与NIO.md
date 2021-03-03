@@ -23,3 +23,13 @@
 
         NIO的实现，是基于底层的选择器的系统调用。NIO的选择器，需要底层操作
         系统提供支持。而OIO不需要用到选择器。
+
+## buffer类
+  NIO Buffer(缓冲区)本质上是内存块。Buffer类位于java.nio包中，是一个抽象类。可以写入数据 也可以读取数据。非线程安全。
+  
+  Buffer类有ByteBuffer、CharBuffer、DoubleBuffer、FloatBuffer、IntBuffer、LongBuffer、ShortBuffer、MappedByteBuffer。
+  
+  常用ByteBuffer二进制字节缓冲区。
+  
+  Buffer类在其内部，有一个byte[]数组内存块，作为内存缓冲区。为了记录读写 的状态和位置，Buffer类提供了一些重要的属性。其中，有三个重要的成员属性：
+  capacity（容量）、position（读写位置）、limit（读写的限制）
