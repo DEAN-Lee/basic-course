@@ -27,14 +27,22 @@ public class BufferDemo {
         byteBuffer.put((byte) 4);
         byteBuffer.put((byte) 4);
         byteBuffer.put((byte) 4);
-        byteBuffer.put((byte) 4);
+        byteBuffer.put((byte) 6);
 
-        System.out.println(byteBuffer.limit());
-        System.out.println(byteBuffer.position());
-        System.out.println(byteBuffer.capacity());
-        System.out.println(byteBuffer.get(1));
+        System.out.println("before------>limit "+byteBuffer.limit());
+        System.out.println("before------>position"+byteBuffer.position());
+        System.out.println("before------>capacity"+byteBuffer.capacity());
 
+        byteBuffer.flip();
 
+        System.out.println("after------>limit"+byteBuffer.limit());
+        System.out.println("after------>position"+byteBuffer.position());
+        System.out.println("after------>capacity"+byteBuffer.capacity());
+        int i = 0;
+        while (i < byteBuffer.limit()) {
+            System.out.println(byteBuffer.get(i));
+            i++;
+        }
 
     }
 
