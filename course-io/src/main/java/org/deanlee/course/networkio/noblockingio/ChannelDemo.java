@@ -22,16 +22,17 @@ public class ChannelDemo {
     }
 
     static void fileReadDemo() throws Exception {
-        // 创建
+        // 创建文件流
         FileInputStream stream = new FileInputStream(new File("").getAbsolutePath() + "/course-io/src/main/resources/test.txt");
+        //获取通道
         FileChannel inChannel = stream.getChannel();
-        ByteBuffer buf = ByteBuffer.allocate(48);
+        ByteBuffer buf = ByteBuffer.allocate(49);
         int bytesRead = inChannel.read(buf);
         while (bytesRead != -1) {
             System.out.println("Read " + bytesRead);
             buf.flip();
             while (buf.hasRemaining()) {
-                System.out.print((char) buf.get());
+                System.out.println((char) buf.get());
             }
             buf.clear();
             bytesRead = inChannel.read(buf);
