@@ -1,6 +1,7 @@
 package org.deanlee.course.networkio.noblockingio;
 
 import org.deanlee.course.networkio.blockingio.InputOrOutStreamDemo;
+import sun.nio.ch.IOUtil;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -37,6 +38,7 @@ public class ChannelDemo {
             buf.clear();
             bytesRead = inChannel.read(buf);
         }
+        inChannel.close();
         stream.close();
     }
 
