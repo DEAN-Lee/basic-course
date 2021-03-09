@@ -31,32 +31,41 @@ public class BufferDemo {
         byteBuffer.put((byte) 13);
         byteBuffer.put((byte) 14);
         //打印参数值
-        System.out.println("before------>limit " + byteBuffer.limit());
-        System.out.println("before------>position" + byteBuffer.position());
-        System.out.println("before------>capacity" + byteBuffer.capacity());
+        System.out.println("put ------>limit " + byteBuffer.limit());
+        System.out.println("put ------>position" + byteBuffer.position());
+        System.out.println("put ------>capacity" + byteBuffer.capacity());
         //切换模式读模式
         byteBuffer.flip();
         //输出参数值
-        System.out.println("after------>limit" + byteBuffer.limit());
-        System.out.println("after------>position" + byteBuffer.position());
-        System.out.println("after------>capacity" + byteBuffer.capacity());
+        System.out.println("flip after------>limit" + byteBuffer.limit());
+        System.out.println("flip after------>position" + byteBuffer.position());
+        System.out.println("flip after------>capacity" + byteBuffer.capacity());
         //输出2buffer数量
         for (int i = 0; i < 2; i++) {
             System.out.println(byteBuffer.get());
         }
 
         //输出3buffer数量 后 参数值
-        System.out.println("after1------>limit" + byteBuffer.limit());
-        System.out.println("after1------>position" + byteBuffer.position());
-        System.out.println("after1------>capacity" + byteBuffer.capacity());
+        System.out.println("print two element after------>limit" + byteBuffer.limit());
+        System.out.println("print two element after------>position" + byteBuffer.position());
+        System.out.println("print two element after------>capacity" + byteBuffer.capacity());
         //输出内容
         for (int i = 0; i < 4; i++) {
             System.out.println(byteBuffer.get());
         }
         // 输出4buffer数量 后 参数值
-        System.out.println("after2------>limit" + byteBuffer.limit());
-        System.out.println("after2------>position" + byteBuffer.position());
-        System.out.println("after2------>capacity" + byteBuffer.capacity());
+        System.out.println("print four element after------>limit" + byteBuffer.limit());
+        System.out.println("print four element after------>position" + byteBuffer.position());
+        System.out.println("print four element after------>capacity" + byteBuffer.capacity());
+
+        //切换为写模式 or Buffer.compact()
+        byteBuffer.clear();
+
+        // 切换写模式后数值
+        System.out.println("clear after------>limit" + byteBuffer.limit());
+        System.out.println("clear after------>position" + byteBuffer.position());
+        System.out.println("clear after------>capacity" + byteBuffer.capacity());
+
     }
 
     public static void main(String[] args) {

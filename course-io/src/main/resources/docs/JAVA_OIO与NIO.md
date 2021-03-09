@@ -33,3 +33,21 @@
   
   Buffer类在其内部，有一个byte[]数组内存块，作为内存缓冲区。为了记录读写 的状态和位置，Buffer类提供了一些重要的属性。其中，有三个重要的成员属性：
   capacity（容量）、position（读写位置）、limit（读写的限制）
+  
+  常用方法：
+  * allocate创建对象
+  * put 数据写入
+  * flip 切入到读模式
+  * get 获取数据
+  * clear或者compact方法切换为写入模式。
+  * rewind 倒带，重新读取已经写入的数据
+  
+## channel 
+  不同的网络传输协议，用不同的channel 实现 四大重要Channel实现
+  * FileChannel 用于文件数据读写
+  * SocketChannel  套接字通道用户 tcp连接的数据读写
+  * ServerSocketChannel 服务监听通道，监听Tcp连接
+  * DatagramChannel UDP协议数据读写
+
+### FileChannel 
+
