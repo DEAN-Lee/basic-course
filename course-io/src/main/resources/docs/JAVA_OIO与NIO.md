@@ -50,4 +50,62 @@
   * DatagramChannel UDP协议数据读写
 
 ### FileChannel 
+使用流程
+1. 获取Channel 
+    ```java
+     FileInputStream fis = new FileInputStream(srcFile);
+     FileChannel inChannel fis.getChannel();
+    ```
 
+2. 读取
+    ```java
+        ByteBufferbuf = ByteBuffer.allocate(CAPACITY);
+        int length = -1;
+        //调用通道的read方法，读取数据并买入字节类型的缓冲区
+        while ((length = inChannel.read(buf)) != -1) {
+        //省略……处理读取到的buf中的数据
+        }
+    ```
+
+3. 写入
+    ```java
+    //如果buf刚写完数据，需要flip翻转buf，使其变成读取模式
+    buf.flip();
+    int outlength = 0;
+    //调用write方法，将buf的数据写入通道
+    while ((outlength = outchannel.write(buf)) != 0) {
+    System.out.println("写入的字节数：" + outlength);
+    }
+    ```
+
+4. 关闭
+    ```java
+    channel.close();
+    ```
+
+5. 注意事项
+
+    在将缓冲区写入通道时，出于性能原因，操作系统不可能每次都实时将数据写
+    入磁盘。如果需要保证写入通道的缓冲数据，最终都真正地写入磁盘，可以调用
+    FileChannel的force()方法。
+  
+### SocketChannel/ServerSocketChannel (套接字通道/服务监听通道)
+  SocketChannel  负责服务端和客户端的数据传输
+  
+  ServerSocketChannel 服务端的数据通道监听
+  
+  SocketChannel/ServerSocketChannel都默认是阻塞模式，通过方法设置为非阻塞模式，socketChannel.configureBlocking（true）
+  
+使用流程
+1. 获取Channel
+    ```java
+       //获得一个套接字传输通道
+       SocketChannelsocketChannel = SocketChannel.open();
+       //设置为非阻塞模式
+       socketChannel.configureBlocking(false);
+       //对服务器的IP和端口发起连接
+       socketChannel.connect(new InetSocketAddress("127.0.0.1"，80));
+    ```
+  
+  
+  
