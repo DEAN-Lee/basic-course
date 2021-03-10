@@ -106,6 +106,25 @@
        //对服务器的IP和端口发起连接
        socketChannel.connect(new InetSocketAddress("127.0.0.1"，80));
     ```
+2.  读取数据
+    ```java
+      ByteBufferbuf = ByteBuffer.allocate(1024);
+      int bytesRead = socketChannel.read(buf);
+    ```
+3. 写入到SocketChannel传输通道
+    ```java
+       //写入前需要读取缓冲区，要求ByteBuffer是读取模式
+       buffer.flip();
+       socketChannel.write(buffer);
+    ```
+   
+4. 关闭
+    ```java
+   channel.shutdownOutput()
+   channel.close();
+   
+    ```      
+ 
   
   
   
