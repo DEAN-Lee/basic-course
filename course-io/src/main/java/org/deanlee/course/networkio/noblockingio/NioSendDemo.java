@@ -41,7 +41,7 @@ public class NioSendDemo {
             }
             FileChannel fileChannel = new FileInputStream(file).getChannel();
             SocketChannel socketChannel = SocketChannel.open();
-            socketChannel.socket().connect(new InetSocketAddress("127.0.0.1", 8081));
+            socketChannel.socket().connect(new InetSocketAddress("127.0.0.1", 8080));
             socketChannel.configureBlocking(false);
             while (!socketChannel.finishConnect()) {
                 //不断地自旋、等待，或者做一些其他的事情

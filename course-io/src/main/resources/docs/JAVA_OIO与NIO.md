@@ -1,4 +1,8 @@
 # JAVA中的OIO与NIO
+Java NIO的三大核心组件：Channel（通道）、Buffer（缓冲区）、Selector（选
+择器）。其中通道和缓冲区，二者的联系也比较密切：数据总是从通道读到缓冲区
+内，或者从缓冲区写入到通道中.
+
 * OIO是面向流（Stream Oriented）的，NIO是面向缓冲区（Buffer Oriented）的。
 
         何谓面向流，何谓面向缓冲区呢？
@@ -157,4 +161,4 @@
     ```java
        dChannel.close();
     ```
-   
+## NIO Selector选择器   
