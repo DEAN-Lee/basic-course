@@ -124,7 +124,37 @@
    channel.close();
    
     ```      
- 
-  
-  
-  
+### DatagramChannel 数据报通道
+和Socket套接字的TCP传输协议不同，UDP协议不是面向连接的协议。使用UDP协议时，只要知道服务器的IP和端口，就可以直接向对方发送数据。
+
+使用流程
+
+1. 获取Channel
+   ```java
+         //获得一个套接字传输通道
+         DatagramChannel datagramChannel = DatagramChannel.open();
+        datagramChannel.configureBlocking(false);
+      ```
+
+2. 读取DatagramChannel数据报通道数据
+    ```java
+    //创建缓冲区
+    ByteBufferbuf = ByteBuffer.allocate(1024);
+    //从DatagramChannel读入，再写入到ByteBuffer缓冲区
+    SocketAddressclientAddr= datagramChannel.receive(buffer);
+    ```
+3. 写入通道
+    ```java
+    //把缓冲区翻转到读取模式
+    buffer.flip();
+    //调用send方法，把数据发送到目标IP+端口
+    dChannel.send(buffer, new InetSocketAddress(NioDemoConfig.SOCKET_SERVER_IP,
+    NioDemoConfig.SOCKET_SERVER_PORT));
+    //清空缓冲区，切换到写入模式
+    buffer.clear();
+    ```
+4. 关闭通道
+    ```java
+       dChannel.close();
+    ```
+   
