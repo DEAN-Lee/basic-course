@@ -1,18 +1,12 @@
 package org.deanlee.course.networkio.noblockingio;
 
-import javax.xml.crypto.Data;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
-import java.nio.channels.FileChannel;
-import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 import java.util.Date;
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 /**
  * @author LiMeng
@@ -20,12 +14,12 @@ import java.util.logging.Logger;
  * @date 2019-11-21 20:57
  * 同步非阻塞-多路复用实现 channel demo
  */
-public class NioDaagramChannelDemo {
+public class NioDatagramChannelDemo {
     private Charset charset = Charset.forName("UTF-8");
 
     public static void main(String[] args) throws Exception {
         // 启动客户端连接
-        NioDaagramChannelDemo client = new NioDaagramChannelDemo();
+        NioDatagramChannelDemo client = new NioDatagramChannelDemo();
         // 传输文件
         client.send();
 

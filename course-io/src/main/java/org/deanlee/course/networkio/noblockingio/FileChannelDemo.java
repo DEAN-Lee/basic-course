@@ -13,7 +13,7 @@ import java.nio.channels.FileChannel;
  * @date 2019-11-21 20:57
  * 同步非阻塞-多路复用实现 channel demo
  */
-public class ChannelDemo {
+public class FileChannelDemo {
     public static void main(String[] args) {
         try {
             fileReadDemo();

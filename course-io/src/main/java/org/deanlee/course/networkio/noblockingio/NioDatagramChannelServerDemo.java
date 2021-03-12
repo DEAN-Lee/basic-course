@@ -8,9 +8,7 @@ import java.nio.channels.DatagramChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.charset.Charset;
-import java.util.Date;
 import java.util.Iterator;
-import java.util.Scanner;
 
 /**
  * @author LiMeng
@@ -18,12 +16,12 @@ import java.util.Scanner;
  * @date 2019-11-21 20:57
  * 同步非阻塞-多路复用实现 channel demo
  */
-public class NioDaagramChannelServerDemo {
+public class NioDatagramChannelServerDemo {
     private Charset charset = Charset.forName("UTF-8");
 
     public static void main(String[] args) throws Exception {
         // 启动客户端连接
-        NioDaagramChannelServerDemo client = new NioDaagramChannelServerDemo();
+        NioDatagramChannelServerDemo client = new NioDatagramChannelServerDemo();
         // 传输文件
         client.receive();
 

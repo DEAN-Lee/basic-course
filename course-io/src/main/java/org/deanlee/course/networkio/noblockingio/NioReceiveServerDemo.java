@@ -51,12 +51,12 @@ public class NioReceiveServerDemo {
 // 3.设置为非阻塞
         serverChannel.configureBlocking(false);
 // 4.绑定连接
-        InetSocketAddress address
-                = new InetSocketAddress(8081);
+        InetSocketAddress address = new InetSocketAddress(8081);
+
         serverSocket.bind(address);
 // 5.将通道注册到选择器上,并注册的IO事件为：“接收新连接”
         serverChannel.register(selector, SelectionKey.OP_ACCEPT);
-        Logger.getLogger(NioReceiveServerDemo.class.getName()).info(("serverChannel is listening...");
+        Logger.getLogger(NioReceiveServerDemo.class.getName()).info("serverChannel is listening...");
 // 6.选择感兴趣的IO就绪事件（选择键集合）
         while (selector.select() > 0) {
 // 7.获取选择键集合
@@ -110,8 +110,7 @@ public class NioReceiveServerDemo {
 //客户端发送过来的，首先是文件名
 //根据文件名，创建服务器端的文件，将文件通道保存到客户端
                     String fileName = charset.decode(buffer).toString();
-                    String destPath = IOUtil.getResourcePath(
-                            NioDemoConfig.SOCKET_RECEIVE_PATH);
+                    String destPath = new File("").getAbsolutePath() + "/course-io/src/main/resources/";
                     File directory = new File(destPath);
                     if (!directory.exists()) {
                         directory.mkdir();
@@ -144,12 +143,11 @@ public class NioReceiveServerDemo {
         }
 // 读取数量-1，表示客户端传输结束标志到了
         if (num == -1) {
-            IOUtil.closeQuietly(client.outChannel);
+            client.outChannel.close();
             System.out.println("上传完毕");
             key.cancel();
             Logger.getLogger(NioReceiveServerDemo.class.getName()).info("文件接收成功,File Name：" + client.fileName);
-            Logger.getLogger(NioReceiveServerDemo.class.getName()).info(" Size：" +
-                    IOUtil.getFormatFileSize(client.fileLength));
+            Logger.getLogger(NioReceiveServerDemo.class.getName()).info(" Size：" + client.fileLength);
             long endTime = System.currentTimeMillis();
             Logger.getLogger(NioReceiveServerDemo.class.getName()).info("NIO IO传输毫秒数：" + (endTime - client.startTime));
         }
