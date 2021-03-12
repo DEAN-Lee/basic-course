@@ -161,4 +161,81 @@ Java NIO的三大核心组件：Channel（通道）、Buffer（缓冲区）、Se
     ```java
        dChannel.close();
     ```
-## NIO Selector选择器   
+## NIO Selector选择器  
+选择器的使命是完成IO的多路复用。一个通道代表一条连接通路，
+通过选择器可以同时监控多个通道的IO（输入输出）状况。选择器和通道的关系，
+是监控和被监控的关系。 
+
+通道和选择器之间的关系，通过register（注册）的方式完成。调用通道的
+Channel.register（Selector sel，int ops）方法，可以将通道实例注册到一个选择器
+中。register方法有两个参数：第一个参数，指定通道注册到的选择器实例；第二个
+参数，指定选择器要监控的IO事件类型。
+
+可供选择器监控的通道IO事件类型，包括以下四种：
+* 可读：SelectionKey.OP_READ
+* 可写：SelectionKey.OP_WRITE
+* 连接：SelectionKey.OP_CONNECT
+* 接收：SelectionKey.OP_ACCEPT
+
+事件类型的定义在SelectionKey类中。如果选择器要监控通道的多种事件，可以
+用“按位或”运算符来实现。例如，同时监控可读和可写IO事件：
+```java
+//监控通道的多种事件，用“按位或”运算符来实现
+int key = SelectionKey.OP_READ | SelectionKey.OP_WRITE ;
+```
+
+什么是IO事件呢？这个概念容易混淆，这里特别说明一下。这里的IO事件不是
+对通道的IO操作，而是通道的某个IO操作的一种就绪状态，表示通道具备完成某个
+IO操作的条件。
+
+* 某个SocketChannel通道，完成了和对端的握手连接，则处于“连接就
+绪”（OP_CONNECT）状态。
+
+* 再比方说，某个ServerSocketChannel服务器通道，监听到一个新连接的到来，
+则处于“接收就绪”（OP_ACCEPT）状态。
+
+* 还比方说，一个有数据可读的SocketChannel通道，处于“读就绪”（OP_READ）
+状态；一个等待写入数据的，处于“写就绪”（OP_WRITE）状态。
+
+**不是所有通道都可以监听的，只有继承了SelectableChannel 才可以监听**
+
+选择器使用流程
+1. 获取选择器实例；
+```java
+/调用静态工厂方法open()来获取Selector实例
+Selector selector = Selector.open();
+```
+1. 将通道注册到选择器中；
+```java
+// 2.获取通道
+ServerSocketChannelserverSocketChannel = ServerSocketChannel.open();
+// 3.设置为非阻塞
+serverSocketChannel.configureBlocking(false);
+// 4.绑定连接
+serverSocketChannel.bind(new InetSocketAddress(SystemConfig.SOCKET_SERVER_PORT));
+// 5.将通道注册到选择器上,并制定监听事件为：“接收连接”事件
+serverSocketChannel.register(selector，SelectionKey.OP_ACCEPT);
+```
+1. 轮询感兴趣的IO就绪事件（选择键集合）。
+```java
+//轮询，选择感兴趣的IO就绪事件（选择键集合）
+while (selector.select() > 0) {
+    Set selectedKeys = selector.selectedKeys();
+    Iterator keyIterator = selectedKeys.iterator();
+    while(keyIterator.hasNext()) {
+        SelectionKey key = keyIterator.next();
+        //根据具体的IO事件类型，执行对应的业务操作
+        if(key.isAcceptable()) {
+        // IO事件：ServerSocketChannel服务器监听通道有新连接
+        } else if (key.isConnectable()) {
+        // IO事件：传输通道连接成功
+        } else if (key.isReadable()) {
+        // IO事件：传输通道可读
+        } else if (key.isWritable()) {
+        // IO事件：传输通道可写
+        }
+        //处理完成后，移除选择键
+        keyIterator.remove();
+    }
+}
+```
