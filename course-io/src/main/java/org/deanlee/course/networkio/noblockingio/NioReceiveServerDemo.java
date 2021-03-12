@@ -110,18 +110,19 @@ public class NioReceiveServerDemo {
 //客户端发送过来的，首先是文件名
 //根据文件名，创建服务器端的文件，将文件通道保存到客户端
                     String fileName = charset.decode(buffer).toString();
-                    String destPath = new File("").getAbsolutePath() + "/course-io/src/main/resources/";
+                    String destPath = new File("").getAbsolutePath() + "/course-io/src/main/resources";
                     File directory = new File(destPath);
                     if (!directory.exists()) {
                         directory.mkdir();
                     }
                     client.fileName = fileName;
-                    String fullName = directory.getAbsolutePath()
-                            + File.separatorChar + fileName;
+                    String fullName = directory.getPath() + File.separatorChar + fileName;
                     Logger.getLogger(NioReceiveServerDemo.class.getName()).info("NIO 传输目标文件：" + fullName);
-                    File file = new File(fullName);
-                    FileChannel fileChannel
-                            = new FileOutputStream(file).getChannel();
+                    File file = new File(fullName.trim());
+                    if (!file.exists()) {
+                        file.createNewFile();
+                    }
+                    FileChannel fileChannel = new FileOutputStream(file).getChannel();
                     client.outChannel = fileChannel;
                 } else if (0 == client.fileLength) {
 //客户端发送过来的，其次是文件长度
