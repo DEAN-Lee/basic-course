@@ -47,4 +47,14 @@
     择大量通道的能力
 
 ## 单线程Reactor反应器模式
-  Reactor反应器和Handers处理器处于一个线程中执行
+  Reactor反应器和Handers处理器处于一个线程中执行.
+
+  使用SelectionKey关键方法：
+  * void attach(Object o)
+        此方法可以将任何的Java POJO对象，作为附件添加到SelectionKey实例，相当
+        于附件属性的setter方法。这方法非常重要，因为在单线程版本的反应器模式中，需
+        要将Handler处理器实例，作为附件添加到SelectionKey实例。
+
+  * Object attachment()
+        此方法的作用是取出之前通过attach(Object o)添加到SelectionKey选择键实例的
+        附件，相当于附件属性的getter方法，与attach(Object o)配套使用。
