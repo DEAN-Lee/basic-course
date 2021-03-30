@@ -1,4 +1,4 @@
-package org.deanlee.course.networkio.noblockingio;
+package org.deanlee.course.networkio.noblockingio.reactor;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
@@ -8,6 +8,10 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * 单线程 reactor模式
+ * 服务器绑定分发消息
+ */
 public class SingleEchoServerReactor implements Runnable {
     Selector selector;
     ServerSocketChannel serverSocket;
@@ -18,6 +22,7 @@ public class SingleEchoServerReactor implements Runnable {
     }
 
     //轮询和分发事件
+    @Override
     public void run() {
         try {
             while (!Thread.interrupted()) {
@@ -46,11 +51,13 @@ public class SingleEchoServerReactor implements Runnable {
 
     // Handler:新连接处理器
     class AcceptorHandler implements Runnable {
+        @Override
         public void run() {
             try {
                 SocketChannel channel = serverSocket.accept();
-                if (channel != null)
+                if (channel != null) {
                     new EchoHandler(selector, channel);
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

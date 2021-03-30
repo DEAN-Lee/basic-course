@@ -1,4 +1,4 @@
-package org.deanlee.course.networkio.noblockingio;
+package org.deanlee.course.networkio.noblockingio.reactor;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
@@ -9,13 +9,14 @@ import java.util.Set;
 
 /**
  * 单线程 reactor模式
+ *
  */
 public class SingleReactorServer implements Runnable {
 
     Selector selector;
     ServerSocketChannel serverSocket;
 
-    SingleEchoServerReactor() throws IOException {
+    SingleReactorServer() throws IOException {
 //....省略：打开选择器、serverSocket连接监听通道
 //注册serverSocket的accept事件
         SelectionKey sk =
@@ -24,6 +25,7 @@ public class SingleReactorServer implements Runnable {
         sk.attach(new AcceptorHandler());
     }
 
+    @Override
     public void run() {
 //选择器轮询
         try {
@@ -33,7 +35,7 @@ public class SingleReactorServer implements Runnable {
                 Iterator it = selected.iterator();
                 while (it.hasNext()) {
 //反应器负责dispatch收到的事件
-                    SelectionKey sk = it.next();
+                    SelectionKey sk = (SelectionKey) it.next();
                     dispatch(sk);
                 }
                 selected.clear();
@@ -54,7 +56,9 @@ public class SingleReactorServer implements Runnable {
 
     // 新连接处理器
     class AcceptorHandler implements Runnable {
+        @Override
         public void run() {
+            System.out.println("in acceptor");
 //接受新连接
 //需要为新连接，创建一个输入输出的handler处理器
         }
