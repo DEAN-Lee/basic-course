@@ -38,31 +38,27 @@ public class EchoHandler implements Runnable {
     public void run() {
         try {
             if (state == SENDING) {
-//写入通道
+                //写入通道
                 channel.write(byteBuffer);
-//写完后,准备开始从通道读,byteBuffer切换成写入模式
+                //写完后,准备开始从通道读,byteBuffer切换成写模式
                 byteBuffer.clear();
-//写完后,注册read就绪事件
+                //写完后,注册read就绪事件
                 sk.interestOps(SelectionKey.OP_READ);
-//写完后,进入接收的状态
+                //写完后,进入接收的状态
                 state = RECIEVING;
             } else if (state == RECIEVING) {
-//从通道读
+                //从通道读
                 int length = 0;
                 while ((length = channel.read(byteBuffer)) > 0) {
-                    Logger.getLogger(EchoHandler.class.getName()).info(new String(byteBuffer.array(), 0, length));
+                    Logger.getLogger(SingleReactorSendDemo.class.getName()).info(new String(byteBuffer.array(), 0, length));
                 }
-                byteBuffer.clear();
-                byteBuffer.put(charset.encode("Hello NOI World,Client"));
-//读完后，准备开始写入通道,byteBuffer切换成读取模式
+                //读完后，准备开始写入通道,byteBuffer切换成读模式
                 byteBuffer.flip();
-//读完后，注册write就绪事件
+                //读完后，注册write就绪事件
                 sk.interestOps(SelectionKey.OP_WRITE);
-//读完后,进入发送的状态
+                //读完后,进入发送的状态
                 state = SENDING;
             }
-//处理结束了, 这里不能关闭select key，需要重复使用
-//sk.cancel();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
