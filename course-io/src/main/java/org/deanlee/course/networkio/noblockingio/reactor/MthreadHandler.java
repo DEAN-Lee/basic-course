@@ -1,7 +1,6 @@
 package org.deanlee.course.networkio.noblockingio.reactor;
 
 
-
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
@@ -10,8 +9,7 @@ import java.nio.channels.SocketChannel;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class MthreadHandler implements Runnable
-{
+class MthreadHandler implements Runnable {
     final SocketChannel channel;
     final SelectionKey selectionKey;
     ByteBuffer input = ByteBuffer.allocate(1024);
@@ -23,8 +21,7 @@ class MthreadHandler implements Runnable
     ExecutorService pool = Executors.newFixedThreadPool(2);
     static final int PROCESSING = 3;
 
-    MthreadHandler(Selector selector, SocketChannel c) throws IOException
-    {
+    MthreadHandler(Selector selector, SocketChannel c) throws IOException {
         channel = c;
         c.configureBlocking(false);
         // Optionally try first read now
@@ -38,68 +35,54 @@ class MthreadHandler implements Runnable
         selector.wakeup();
     }
 
-    boolean inputIsComplete()
-    {
-       /* ... */
+    boolean inputIsComplete() {
+        /* ... */
         return true;
     }
 
-    boolean outputIsComplete()
-    {
+    boolean outputIsComplete() {
 
-       /* ... */
+        /* ... */
         return true;
     }
 
-    void process()
-    {
-       /* ... */
+    void process() {
+        /* ... */
         return;
     }
 
     @Override
-    public void run()
-    {
-        try
-        {
-            if (state == READING)
-            {
+    public void run() {
+        try {
+            if (state == READING) {
                 read();
-            }
-            else if (state == SENDING)
-            {
+            } else if (state == SENDING) {
                 send();
             }
-        } catch (IOException ex)
-        { /* ... */ }
+        } catch (IOException ex) { /* ... */ }
     }
 
 
-    synchronized void read() throws IOException
-    {
+    synchronized void read() throws IOException {
         // ...
         channel.read(input);
-        if (inputIsComplete())
-        {
+        if (inputIsComplete()) {
             state = PROCESSING;
             //使用线程pool异步执行
             pool.execute(new Processer());
         }
     }
 
-    void send() throws IOException
-    {
+    void send() throws IOException {
         channel.write(output);
 
         //write完就结束了, 关闭select key
-        if (outputIsComplete())
-        {
+        if (outputIsComplete()) {
             selectionKey.cancel();
         }
     }
 
-    synchronized void processAndHandOff()
-    {
+    synchronized void processAndHandOff() {
         process();
         state = SENDING;
         // or rebind attachment
@@ -107,10 +90,8 @@ class MthreadHandler implements Runnable
         selectionKey.interestOps(SelectionKey.OP_WRITE);
     }
 
-    class Processer implements Runnable
-    {
-        public void run()
-        {
+    class Processer implements Runnable {
+        public void run() {
             processAndHandOff();
         }
     }
