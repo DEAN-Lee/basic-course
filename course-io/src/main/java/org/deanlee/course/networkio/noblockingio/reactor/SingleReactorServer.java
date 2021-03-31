@@ -8,6 +8,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.logging.Logger;
 
 /**
  * 单线程 reactor模式
@@ -27,10 +28,12 @@ public class SingleReactorServer implements Runnable {
         // 4.绑定连接
         InetSocketAddress address = new InetSocketAddress(8081);
         serverSocket.bind(address);
-        //注册serverSocket的accept事件
+        // 5.将通道注册到选择器上,并注册的IO事件为：“接收新连接”
         SelectionKey sk = serverSocket.register(selector, SelectionKey.OP_ACCEPT);
         //将新连接处理器作为附件，绑定到sk选择键
         sk.attach(new AcceptorHandler());
+
+        Logger.getLogger(SingleReactorServer.class.getName()).info("服务器端启动成功！！");
     }
 
     @Override
@@ -57,9 +60,10 @@ public class SingleReactorServer implements Runnable {
      * 反应器的分发方法
      */
     void dispatch(SelectionKey k) {
+        Logger.getLogger(SingleReactorServer.class.getName()).info("分发Handler！！");
         Runnable handler = (Runnable) (k.attachment());
-        //调用之前绑定到选择键的handler处理器对象
         if (handler != null) {
+            Logger.getLogger(SingleReactorServer.class.getName()).info("调用之前绑定到选择键的handler处理器对象！！");
             handler.run();
         }
     }
@@ -70,9 +74,7 @@ public class SingleReactorServer implements Runnable {
     class AcceptorHandler implements Runnable {
         @Override
         public void run() {
-            System.out.println("in acceptor");
-            //接受新连接
-            //需要为新连接，创建一个输入输出的handler处理器
+            Logger.getLogger(SingleReactorServer.class.getName()).info("执行处理");
         }
     }
 

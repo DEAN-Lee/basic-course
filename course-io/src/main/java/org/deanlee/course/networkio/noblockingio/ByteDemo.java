@@ -1,6 +1,7 @@
 package org.deanlee.course.networkio.noblockingio;
 
 import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
 
 /**
  * @author LiMeng
@@ -8,7 +9,7 @@ import java.nio.ByteBuffer;
  * @date 2019-11-21 20:57
  * 同步非阻塞-多路复用实现
  */
-public class BufferDemo {
+public class ByteDemo {
     /**
      * 二进制 测试
      */
@@ -65,6 +66,13 @@ public class BufferDemo {
         System.out.println("clear after------>limit" + byteBuffer.limit());
         System.out.println("clear after------>position" + byteBuffer.position());
         System.out.println("clear after------>capacity" + byteBuffer.capacity());
+
+        System.out.println("OP_ACCEPT------>" + SelectionKey.OP_ACCEPT);
+        System.out.println("OP_READ------>" + SelectionKey.OP_READ);
+        System.out.println("OP_WRITE------>" + SelectionKey.OP_WRITE);
+        System.out.println("OP_CONNECT------>" + SelectionKey.OP_CONNECT);
+
+
 
     }
 

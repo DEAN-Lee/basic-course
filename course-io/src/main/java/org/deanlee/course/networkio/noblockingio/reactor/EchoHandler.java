@@ -1,12 +1,14 @@
 package org.deanlee.course.networkio.noblockingio.reactor;
 
-import org.deanlee.course.networkio.noblockingio.NioSendDemo;
+
+import javafx.scene.chart.Chart;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
+import java.nio.charset.Charset;
 import java.util.logging.Logger;
 
 /***
@@ -17,6 +19,7 @@ public class EchoHandler implements Runnable {
     final SelectionKey sk;
     final ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
     static final int RECIEVING = 0, SENDING = 1;
+    private Charset charset = Charset.forName("UTF-8");
     int state = RECIEVING;
 
     EchoHandler(Selector selector, SocketChannel c) throws IOException {
@@ -47,8 +50,10 @@ public class EchoHandler implements Runnable {
 //从通道读
                 int length = 0;
                 while ((length = channel.read(byteBuffer)) > 0) {
-                    Logger.getLogger(NioSendDemo.class.getName()).info(new String(byteBuffer.array(), 0, length));
+                    Logger.getLogger(EchoHandler.class.getName()).info(new String(byteBuffer.array(), 0, length));
                 }
+                byteBuffer.clear();
+                byteBuffer.put(charset.encode("Hello NOI World,Client"));
 //读完后，准备开始写入通道,byteBuffer切换成读取模式
                 byteBuffer.flip();
 //读完后，注册write就绪事件

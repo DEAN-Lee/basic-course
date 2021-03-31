@@ -1,12 +1,14 @@
 package org.deanlee.course.networkio.noblockingio.reactor;
 
 import java.io.IOException;
+import java.net.InetSocketAddress;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.logging.Logger;
 
 /**
  * 单线程 reactor模式
@@ -17,8 +19,21 @@ public class SingleEchoServerReactor implements Runnable {
     ServerSocketChannel serverSocket;
 
     SingleEchoServerReactor() throws IOException {
-//...获取选择器、开启serverSocket服务监听通道
-//...绑定AcceptorHandler新连接处理器到selectKey
+        // 1.获取选择器
+        selector = Selector.open();
+        // 2.获取通道
+        serverSocket = ServerSocketChannel.open();
+        // 3.设置为非阻塞
+        serverSocket.configureBlocking(false);
+        // 4.绑定连接
+        InetSocketAddress address = new InetSocketAddress(8081);
+        serverSocket.bind(address);
+        // 5.将通道注册到选择器上,并注册的IO事件为：“接收新连接”
+        SelectionKey sk = serverSocket.register(selector, SelectionKey.OP_ACCEPT);
+        //将新连接处理器作为附件，绑定到sk选择键
+        sk.attach(new AcceptorHandler());
+
+        Logger.getLogger(SingleEchoServerReactor.class.getName()).info("服务器端启动成功！！");
     }
 
     //轮询和分发事件
