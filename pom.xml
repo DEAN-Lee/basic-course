@@ -21,6 +21,7 @@
         <module>course-algorithm</module>
         <module>course-pattern</module>
         <module>course-tcp</module>
+        <module>course-thread</module>
     </modules>
 
     <dependencies>
