@@ -89,7 +89,6 @@ public class SingleReactorSendDemo {
                                 Logger.getLogger(SingleReactorSendDemo.class.getName()).info("server echo:" + new String(byteBuffer.array(), 0, length));
                                 byteBuffer.clear();
                             }
-
                         }
                         //处理结束了, 这里不能关闭select key，需要重复使用
                         //selectionKey.cancel();
