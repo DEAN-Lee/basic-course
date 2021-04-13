@@ -47,8 +47,8 @@ public class GuavaFutureDemo {
     //泡茶线程
     static class MainJob implements Runnable {
 
-        boolean warterOk = false;
-        boolean cupOk = false;
+        boolean aOk = false;
+        boolean bOk = false;
         int gap = 1000 / 10;
 
         @Override
@@ -61,21 +61,21 @@ public class GuavaFutureDemo {
                     System.out.println(getCurThreadName() + "发生异常被中断.");
                 }
 
-                if (warterOk && cupOk) {
-                    drinkTea(warterOk, cupOk);
+                if (aOk && bOk) {
+                    successTest(aOk, bOk);
                 }
             }
         }
 
 
-        public void drinkTea(Boolean wOk, Boolean cOK) {
-            if (wOk && cOK) {
-                System.out.println("泡茶喝，茶喝完");
-                this.warterOk = false;
+        public void successTest(Boolean aOk, Boolean bOK) {
+            if (aOk && bOK) {
+                System.out.println("成功");
+                this.aOk = false;
                 this.gap = 1000 * 100;
-            } else if (!wOk) {
-                System.out.println("烧水失败，没有茶喝了");
-            } else if (!cOK) {
+            } else if (!aOk) {
+                System.out.println("A失败，没有茶喝了");
+            } else if (!bOK) {
                 System.out.println("杯子洗不了，没有茶喝了");
             }
 
@@ -95,8 +95,6 @@ public class GuavaFutureDemo {
         AThread aThread = new AThread();
         BThread bThread = new BThread();
 
-
-
         //创建java 线程池
         ExecutorService jPool =
                 Executors.newFixedThreadPool(10);
@@ -105,14 +103,14 @@ public class GuavaFutureDemo {
         ListeningExecutorService gPool =
                 MoreExecutors.listeningDecorator(jPool);
 
-        //提交烧水的业务逻辑，取到异步任务
-        ListenableFuture<Boolean> hotFuture = gPool.submit(aThread);
+        //提交A的业务逻辑，取到异步任务
+        ListenableFuture<Boolean> aFuture = gPool.submit(aThread);
         //绑定任务执行完成后的回调，到异步任务
-        Futures.addCallback(hotFuture, new FutureCallback<Boolean>() {
+        Futures.addCallback(aFuture, new FutureCallback<Boolean>() {
             @Override
             public void onSuccess(Boolean r) {
                 if (r) {
-                    mainJob.warterOk = true;
+                    mainJob.aOk = true;
                 }
             }
 
@@ -129,7 +127,7 @@ public class GuavaFutureDemo {
             @Override
             public void onSuccess(Boolean r) {
                 if (r) {
-                    mainJob.cupOk = true;
+                    mainJob.bOk = true;
                 }
             }
 
