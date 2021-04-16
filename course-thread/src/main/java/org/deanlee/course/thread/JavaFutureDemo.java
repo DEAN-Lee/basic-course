@@ -10,12 +10,7 @@ import java.util.concurrent.FutureTask;
  */
 public class JavaFutureDemo {
     static class AThread implements Callable<Boolean>{
-        /**
-         * Computes a result, or throws an exception if unable to do so.
-         *
-         * @return computed result
-         * @throws Exception if unable to compute a result
-         */
+
         @Override
         public Boolean call() throws Exception {
             System.out.println(Thread.currentThread().getName() + "AThread start");
@@ -26,12 +21,7 @@ public class JavaFutureDemo {
     }
 
     static class BThread implements Callable<Boolean>{
-        /**
-         * Computes a result, or throws an exception if unable to do so.
-         *
-         * @return computed result
-         * @throws Exception if unable to compute a result
-         */
+
         @Override
         public Boolean call() throws Exception {
             System.out.println(Thread.currentThread().getName() + "BThread start");
