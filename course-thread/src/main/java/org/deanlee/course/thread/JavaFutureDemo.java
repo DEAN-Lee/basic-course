@@ -1,5 +1,6 @@
 package org.deanlee.course.thread;
 
+import java.util.Arrays;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -45,7 +46,9 @@ public class JavaFutureDemo {
 
         try {
             boolean  warterOk = aTask.get();
+            System.out.println("warterOk = " + warterOk);
             boolean  cupOk = bTask.get();
+            System.out.println("cupOk = " + cupOk);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
