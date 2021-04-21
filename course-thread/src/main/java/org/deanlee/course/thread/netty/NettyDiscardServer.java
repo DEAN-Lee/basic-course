@@ -70,7 +70,7 @@ public class NettyDiscardServer {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        int port =8081;
+        int port = 8081;
         new NettyDiscardServer(port).runServer();
     }
 }
