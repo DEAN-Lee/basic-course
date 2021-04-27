@@ -1,1 +1,38 @@
 # Netty IO
+## Netty Channel
+Netty中的每一种协议的通道，都有NIO（异步IO）和OIO（阻塞式
+IO）两个版本。
+
+* NioSocketChannel：异步非阻塞TCP Socket传输通道。
+* NioServerSocketChannel：异步非阻塞TCP Socket服务器端监听通道。
+* NioDatagramChannel：异步非阻塞的UDP传输通道。
+* NioSctpChannel：异步非阻塞Sctp传输通道。
+* NioSctpServerChannel：异步非阻塞Sctp服务器端监听通道。
+* OioSocketChannel：同步阻塞式TCP Socket传输通道。
+* OioServerSocketChannel：同步阻塞式TCP Socket服务器端监听通道。
+* OioDatagramChannel：同步阻塞式UDP传输通道。
+* OioSctpChannel：同步阻塞式Sctp传输通道。
+* OioSctpServerChannel：同步阻塞式Sctp服务器端监听通道。
+
+## Netty中的Reactor反应器
+
+在反应器模式中，一个反应器（或者SubReactor子反应器）会负责一个事件处
+理线程，不断地轮询，通过Selector选择器不断查询注册过的IO事件（选择键）。
+Netty中的反应器有多个实现类，与Channel通道类有关系。对应于
+NioSocketChannel通道，Netty的反应器类为：NioEventLoop。
+
+## Netty中的Handler处理器
+Java NIO的IO事件类型时讲到，可供选择器监控的通道IO
+事件类型包括以下4种：
+
+* 可读：SelectionKey.OP_READ
+* 可写：SelectionKey.OP_WRITE
+* 连接：SelectionKey.OP_CONNECT
+* 接收：SelectionKey.OP_ACCEPT
+
+Netty的Handler处理器分为两大类：第一类是ChannelInboundHandler通道入站处
+理器；第二类是ChannelOutboundHandler通道出站处理器。二者都继承了
+ChannelHandler处理器接口。
+
+##  Netty的流水线（Pipeline）
+
