@@ -35,4 +35,8 @@ Netty的Handler处理器分为两大类：第一类是ChannelInboundHandler通�
 ChannelHandler处理器接口。
 
 ##  Netty的流水线（Pipeline）
-
+Netty设计了一个特殊的组件，叫作ChannelPipeline（通道流水线），它像一条
+管道，将绑定到一个通道的多个Handler处理器实例，串在一起，形成一条流水线。
+ChannelPipeline（通道流水线）的默认实现，实际上被设计成一个双向链表。所有
+的Handler处理器实例被包装成了双向链表的节点，被加入到了ChannelPipeline（通
+道流水线）中。
