@@ -40,3 +40,12 @@ Netty设计了一个特殊的组件，叫作ChannelPipeline（通道流水线）
 ChannelPipeline（通道流水线）的默认实现，实际上被设计成一个双向链表。所有
 的Handler处理器实例被包装成了双向链表的节点，被加入到了ChannelPipeline（通
 道流水线）中。
+
+入站处理器Handler的执行次序，是从前到后；出站处理器Handler的执
+行次序，是从后到前。
+
+入站的IO操作只会且只能从Inbound入站处理器类型
+的Handler流过；出站的IO操作只会且只能从Outbound出站处理器类型的Handler流
+过。
+
+
