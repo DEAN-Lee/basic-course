@@ -23,6 +23,7 @@ NioSocketChannel通道，Netty的反应器类为：NioEventLoop。
 
 ## Netty中的Handler处理器
 Java NIO的IO事件类型时讲到，可供选择器监控的通道IO
+
 事件类型包括以下4种：
 
 * 可读：SelectionKey.OP_READ
