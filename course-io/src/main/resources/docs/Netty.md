@@ -48,7 +48,3 @@ ChannelPipeline（通道流水线）的默认实现，实际上被设计成一�
 入站的IO操作只会且只能从Inbound入站处理器类型
 的Handler流过；出站的IO操作只会且只能从Outbound出站处理器类型的Handler流
 过。
-
-
-
-
