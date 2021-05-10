@@ -48,3 +48,20 @@ ChannelPipeline（通道流水线）的默认实现，实际上被设计成一�
 入站的IO操作只会且只能从Inbound入站处理器类型
 的Handler流过；出站的IO操作只会且只能从Outbound出站处理器类型的Handler流
 过。
+
+
+##  Bootstrap启动器类
+
+Bootstrap类是Netty提供的一个便利的工厂类，可以通过它来完成Netty的客户端
+或服务器端的Netty组件的组装，以及Netty程序的初始化。当然也可以自行去组装处理。
+
+有两个启动器类，分别用在服务器和客户端
+* Bootstrap
+* ServerBootstrap
+
+两者继承 AbstractBootstrap
+
+### 父子通道
+
+
+### EventLoopGroup 事件循环线程组
