@@ -62,6 +62,22 @@ Bootstrap类是Netty提供的一个便利的工厂类，可以通过它来完成
 两者继承 AbstractBootstrap
 
 ### 父子通道
+操作系统底层的socket描述符分为两类。
+
+* 连接监听类型。连接监听类型的socket描述符，放在服务器端，它负责接收客户端的套接字连接；在服务器端，一个“连接监听类型”的socket描述符可以接受（Accept）成千上万的传输类的socket描述符。
+
+* 传输数据类型。数据传输类的socket描述符负责传输数据。同一条TCP的Socket传输链路，在服务
+
+在Netty中，异步非阻塞的服务器端监听通道NioServerSocketChannel，封装在
+Linux底层的描述符，是“连接监听类型”socket描述符；而NioSocketChannel异步非阻
+塞TCP Socket传输通道，封装在底层Linux的描述符，是“数据传输类型”的socket描
+述符。
+
+在Netty中，将有接收关系的NioServerSocketChannel和NioSocketChannel，叫作
+父子通道。其中，NioServerSocketChannel负责服务器连接监听和接收，也叫父通道
+（Parent Channel）。对应于每一个接收到的NioSocketChannel传输类通道，也叫子
+通道（Child Channel）。
+
 
 
 ### EventLoopGroup 事件循环线程组
