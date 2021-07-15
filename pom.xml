@@ -22,6 +22,7 @@
         <module>course-pattern</module>
         <module>course-tcp</module>
         <module>course-thread</module>
+        <module>course-zk</module>
     </modules>
 
     <dependencies>

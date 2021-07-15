@@ -1,9 +1,12 @@
 package org.deanlee.course.networkio.noblockingio;
+import com.google.common.collect.Maps;
+
+import com.alibaba.fastjson.JSON;
+import com.lcb.soa.misc.common.util.MD5Util;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * @author LiMeng
@@ -79,6 +82,31 @@ public class ByteDemo {
     }
 
     public static void main(String[] args) {
-        byteBufferTest();
+//        byteBufferTest();
+        Long timespan = System.currentTimeMillis();
+        System.out.println(timespan);
+        String key = "F26DC4ACB5385711D0686507238703A4";
+        String sign = MD5Util.getMD5(timespan.toString().concat("{}").concat(key));
+        System.out.println(sign.toUpperCase());
+        OrderExtOpenNotifyRequest t = new OrderExtOpenNotifyRequest();
+        t.setOuterOrderId("1");
+        t.setOrderNumber("2");
+        t.setPayAmount(0);
+        t.setNotifyType("");
+        t.setUpdateStatus(0);
+        t.setTimestamp(0L);
+
+        Map temp = new HashMap<>();
+        temp.put("11", "111");
+        temp.put("1111", "34");
+        t.setExtInfo(temp);
+        System.out.println(JSON.toJSONString(t));
+
+        System.out.println(1 << 30);
+
+    }
+
+    public static void excel(Integer temp){
+        System.out.println("temp = " +  (temp > 300000 ? temp - (temp / 300000) * 300000 : temp));
     }
 }
